@@ -1,5 +1,7 @@
 package com.wissen;
 
+import java.util.Arrays;
+
 public class Test {
 
 	public static void main(String[] args) {	
@@ -19,5 +21,37 @@ public class Test {
 			sum = first+sum;
 		}
 	}
+	
+	//3sum closest
+	//TC: O(n^2)
+    //SC: O(n)
+	public static int threeSumClosest(int[] nums, int target) {
+        Arrays.sort(nums);
+        int closestSum =0;
+        int closestDiff = Integer.MAX_VALUE;
+        int n = nums.length;
+        
+        for(int i=0; i<nums.length-2; i++) {
+            int j = i+1;
+            int k = n-1;
+            while(j < k) {
+                int currSum = nums[i]+nums[j]+nums[k];
+                int absDiff = Math.abs(currSum-target);
+                if(absDiff < closestDiff) {
+                    closestDiff = absDiff;
+                    closestSum = currSum;
+                }
+                if(currSum == target) {
+                    return currSum;
+                }
+                if(currSum < target) {
+                    j++;
+                } else if(currSum > target) {
+                    k--;
+                }
+            }
+        }
+        return closestSum;
+    }
 
 }
