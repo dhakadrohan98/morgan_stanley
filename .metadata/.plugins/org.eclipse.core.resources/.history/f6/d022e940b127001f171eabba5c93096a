@@ -1,0 +1,17 @@
+package com.wissen;
+
+import java.util.*;
+public class FrequencyOfElement {
+
+	public static int countFrequency(int[] arr) {
+		
+		Map<Integer,>
+		
+		return 0;
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

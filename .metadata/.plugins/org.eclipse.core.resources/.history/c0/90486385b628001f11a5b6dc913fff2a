@@ -1,0 +1,8 @@
+package com.wissen.multithreading;
+
+public class WihtoutSynchronizedKeyword {
+	public static void main(String[] args) {
+		TotalEarnings te = new TotalEarnings();
+		
+	}
+}

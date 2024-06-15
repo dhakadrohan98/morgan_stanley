@@ -1,0 +1,14 @@
+package com.wissen.lambdafunction;
+
+class functional {
+	public double calculateArea(int radius);
+}
+
+public class LambdaExpression {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

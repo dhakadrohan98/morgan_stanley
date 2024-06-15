@@ -1,0 +1,10 @@
+package com.wissen.comparable.comparator;
+
+public class Student implements Comparable<Student> {
+	int id;
+	String name;
+	String email;
+	long phone;
+	
+	
+}

@@ -1,0 +1,18 @@
+package com.wissen.jdbc;
+
+import java.sql.*;
+
+public class JDBCConnection {
+	public static void main(String[] args) {
+		try {
+			//load the driver
+			Class.forName("com.mysql.cj.jdbc.Driver");
+			
+			//creating a connection
+			Connection conn = new Driver
+			
+		} catch(Exception e) {
+			e.printStackTrace();
+		}
+	}
+}

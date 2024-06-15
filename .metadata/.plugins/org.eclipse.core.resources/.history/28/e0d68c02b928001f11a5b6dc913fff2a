@@ -1,0 +1,10 @@
+package com.wissen.multithreading;
+
+public class MovieBookApp {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

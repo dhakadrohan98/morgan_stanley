@@ -1,0 +1,12 @@
+package com.wissen.priorityqueue;
+
+import java.util.*;
+
+public class MinHeap {
+
+	public static void main(String[] args) {
+		Queue<Integer> pq = new PriorityQueue<>();
+
+	}
+
+}

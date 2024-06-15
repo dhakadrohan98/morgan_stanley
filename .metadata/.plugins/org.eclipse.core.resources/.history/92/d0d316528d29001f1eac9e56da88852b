@@ -1,0 +1,10 @@
+package com.wissen.FlatternedArray;
+
+public class ArrayFlatterner {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

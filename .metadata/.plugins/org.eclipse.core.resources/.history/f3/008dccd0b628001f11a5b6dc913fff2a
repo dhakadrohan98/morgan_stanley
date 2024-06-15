@@ -1,0 +1,10 @@
+package com.wissen.multithreading;
+
+public class withSychronizedKeywordWaitNotifyMethod {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

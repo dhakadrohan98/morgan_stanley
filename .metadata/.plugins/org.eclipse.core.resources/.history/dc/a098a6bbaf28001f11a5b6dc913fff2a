@@ -1,0 +1,8 @@
+package com.wissen.multithreading;
+
+public class ThreadExample extends Thread {
+	@Override
+	public void run() {
+		
+	}
+}

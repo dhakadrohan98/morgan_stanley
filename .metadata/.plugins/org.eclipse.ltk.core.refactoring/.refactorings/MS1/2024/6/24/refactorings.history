@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.wissen.FibonacciNumbers&apos; to &apos;FibonacciNumbersInTheRange&apos;&#x0D;&#x0A;- Original project: &apos;Interview&apos;&#x0D;&#x0A;- Original element: &apos;com.wissen.FibonacciNumbers&apos;&#x0D;&#x0A;- Renamed element: &apos;com.wissen.FibonacciNumbersInTheRange&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;FibonacciNumbers&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;com.wissen{FibonacciNumbers.java[FibonacciNumbers" matchStrategy="1" name="FibonacciNumbersInTheRange" qualified="false" references="true" similarDeclarations="false" stamp="1718275694803" textual="false" version="1.0"/>
+</session>

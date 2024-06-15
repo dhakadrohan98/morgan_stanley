@@ -1,0 +1,17 @@
+package com.wissen.lambdafunction;
+
+interface Functional {
+	public void calculateArea(double radius);
+}
+
+public class LambdaExpression {
+
+	public static void main(String[] args) {
+		Functional functional = (radius) -> {
+			double area = 3.1413 * radius * radius;
+			System.out.println();
+		};
+
+	}
+
+}

@@ -1,0 +1,11 @@
+package com.wissen.dsa2;
+
+public class LongestPalindromicSubstring {
+
+	public String longestPalindrome(String str) {}
+	
+	public static void main(String[] args) {
+		
+	}
+
+}

@@ -1,0 +1,11 @@
+package com.wissen.multithreading;
+
+public class TestDeadLockEx {
+
+	public static void main(String[] args) {
+		String resource1 = "sainik jaiswal";
+		String resource2 = "ratan tata";
+
+	}
+
+}

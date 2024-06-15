@@ -1,0 +1,12 @@
+package com.wissen.multithreading;
+
+public class MovieBookApp {
+
+	static BookTheaterSeat b;
+	
+	public static void main(String[] args) {
+		
+
+	}
+
+}

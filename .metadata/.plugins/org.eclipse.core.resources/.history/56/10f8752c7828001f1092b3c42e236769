@@ -1,0 +1,21 @@
+package com.wissen.immutableclass;
+
+import java.util.*;
+
+public final class Student {
+	private final int id;
+	private final String name;
+	private final List<String> subjects;
+	
+	public Student(int id, String name, List<String> subjects) {
+		this.id = id;
+		this.name = name;
+		//create another list as copyList & copy incoming list objects into copyList and assign 
+		//copyList to  this.subjects list
+		List<String> copyList = new ArrayList<>();
+		for(String subject: subjects) {
+			copyList.add(subject);
+		}
+		this.subjects = copyList;
+	}
+}

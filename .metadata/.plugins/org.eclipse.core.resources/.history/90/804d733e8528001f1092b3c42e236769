@@ -1,0 +1,13 @@
+package com.wissen.streamAPI;
+
+import java.util.*;
+
+public class SortElementsStreamAPI {
+
+	public static void main(String[] args) {
+		List<String> names = Arrays.asList("Reflection","Collection","Stream");
+		
+
+	}
+
+}

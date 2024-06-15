@@ -1,0 +1,10 @@
+package com.wissen.streamAPI;
+
+public class SquareOfEvenNumber {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

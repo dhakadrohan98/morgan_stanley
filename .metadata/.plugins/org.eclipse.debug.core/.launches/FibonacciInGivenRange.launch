@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
+    <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+        <listEntry value="/Round2MS/src/com/wissen/array/FibonacciInGivenRange.java"/>
+    </listAttribute>
+    <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+        <listEntry value="1"/>
+    </listAttribute>
+    <booleanAttribute key="org.eclipse.jdt.launching.ATTR_EXCLUDE_TEST_CODE" value="true"/>
+    <stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="com.wissen.array.FibonacciInGivenRange"/>
+    <stringAttribute key="org.eclipse.jdt.launching.MODULE_NAME" value="Round2MS"/>
+    <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="Round2MS"/>
+</launchConfiguration>

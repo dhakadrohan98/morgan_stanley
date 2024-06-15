@@ -1,0 +1,10 @@
+package com.wissen.multithreading;
+
+public class TotalEarnings extends Thread {
+	int total = 0;
+	
+	@Override
+	public void run() {
+		
+	}
+}

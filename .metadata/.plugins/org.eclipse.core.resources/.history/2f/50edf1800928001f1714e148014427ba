@@ -1,0 +1,27 @@
+package com.wissen.concurrent.collection;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class NonThreadSafeExample {
+
+	public static void main(String[] args) {
+		List<String> list = new ArrayList<>();
+		list.add("first");
+		list.add("sec");
+		list.add("third");
+		list.add("fourth");
+		list.add("fifth");
+		
+		Runnable t1 = () -> {
+			//thread-1
+			
+		};
+		
+		Runnable t2 = () -> {
+			//thread-2
+		}
+
+	}
+
+}

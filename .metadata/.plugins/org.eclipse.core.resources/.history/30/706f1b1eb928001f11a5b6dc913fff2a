@@ -1,0 +1,13 @@
+package com.wissen.multithreading;
+
+public class MovieBookApp extends Threas {
+
+	static BookTheaterSeat b;
+	
+	public static void main(String[] args) {
+		b = new BookTheaterSeat();
+		
+
+	}
+
+}

@@ -1,0 +1,19 @@
+package com.wissen.immutableclass;
+
+import java.util.*;
+
+public final class Student {
+	private final int id;
+	private final String name;
+	private final List<String> subjects;
+	
+	public Student(int id, String name, List<String> subjects) {
+		this.id = id;
+		this.name = name;
+		List<String> tempList = new ArrayList<>();
+		for(String subject: subjects) {
+			tempList.add(subject);
+		}
+		this.subjects = tempList;
+	}
+}

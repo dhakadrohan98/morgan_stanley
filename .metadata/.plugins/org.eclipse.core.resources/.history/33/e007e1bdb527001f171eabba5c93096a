@@ -1,0 +1,17 @@
+package com.wissen;
+
+import java.util.*;
+
+public class PrintCharactersFreq {
+
+	public void printCharacterFreq(int str) {
+		LinkedHashMap<Character, Integer> lhmap = new LinkedHashMap<>();
+		hmap.put(, null)
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

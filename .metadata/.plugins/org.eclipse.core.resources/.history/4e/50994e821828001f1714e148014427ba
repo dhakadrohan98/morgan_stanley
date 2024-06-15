@@ -1,0 +1,14 @@
+package com.wissen.comparable.comparator;
+
+public class Student implements Comparable<Student> {
+	int id;
+	String name;
+	String email;
+	long phone;
+
+	@Override
+	public int compareTo(Student obj) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+}
