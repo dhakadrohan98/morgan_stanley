@@ -4,8 +4,8 @@ public class Test {
 
 	public static void main(String[] args) {	
 		//fibonacci series within given range (4,9)
-		int start = 44;
-		int end = 100;
+		int start = 4;
+		int end = 9;
 		int first = 0;
 		int second = 1;
 		int sum = first + second;
