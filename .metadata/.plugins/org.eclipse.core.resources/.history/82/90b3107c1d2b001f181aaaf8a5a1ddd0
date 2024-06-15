@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class LongestCommonSubsequenceMemoization2Ddp {
 
-	//TC: < O(2^m * 2^n)
+	//TC: O(2^n)
 	//SC: O(n * m)
 	public int longestCommonSubsequence(String text1, String text2) {
         int n1 = text1.length();
