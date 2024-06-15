@@ -1,0 +1,46 @@
+package com.wissen;
+
+import java.util.*;
+
+public class SubsequenceOfString {
+
+	public static List<String> longestPalindromeSubseq(String s) {
+		Map<String, List<String>> hmap = new HashMap<>();
+        int i = 0;
+        String result = "";
+        return generateSubsequences(s, i, result, hmap);
+    }
+	
+	public static List<String> generateSubsequences(String s, int i, String result, Map<String, List<String>> hmap) {
+		List<String> subsequences = new ArrayList<String>();
+		
+		String key = i+result;
+        //base case
+        if(i >= s.length()) {
+        	subsequences.add(result);
+        	return subsequences;
+        }
+        
+        if(hmap.containsKey(key)) {
+        	return hmap.get(key);
+        }
+
+        //Include the current character (oick)
+       subsequences.addAll(generateSubsequences(s, i+1, result + s.charAt(i)), hmap);
+       //Exclude the current character (not pick)
+       subsequences.addAll(generateSubsequences(s, i+1, result));
+       //List<String> subsequences
+       return subsequences;
+        
+    }
+	
+	public static void main(String[] args) {
+		String s = "bbbab";
+		List<String> subsequences = longestPalindromeSubseq(s);
+		for(String str:subsequences) {
+			System.out.println(str);
+		}
+
+	}
+
+}
