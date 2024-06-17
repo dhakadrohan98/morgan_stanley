@@ -1,0 +1,14 @@
+package com.wissen;
+
+public class CheckArrayIsInAscendingORDescendingOrder {
+
+	public static boolean isAscDes(int[] nums) {
+		
+		return true;
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

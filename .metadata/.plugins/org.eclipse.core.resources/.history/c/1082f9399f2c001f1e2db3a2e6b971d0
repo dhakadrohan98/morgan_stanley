@@ -1,0 +1,60 @@
+package com.wissen;
+
+public class CheckArrayIsInAscendingORDescendingOrder {
+
+	public static boolean isAscDes(int[] nums) {
+		int n = nums.length;
+		int left = 0, right = 0;
+		boolean isAscending = false;
+
+		while (nums[left] == nums[right]) {
+			right++;
+		}
+
+		if (nums[left] < nums[right]) {
+			isAscending = true;
+		} else {
+			isAscending = false;
+		}
+		
+		//ascending order logic
+		if(isAscending) {
+			while(right < n) {
+				if(nums[left] < nums[right]) {
+					while(nums[left] == nums[left+1] && left < n) {
+						left++;
+					}
+					while(nums[left] == nums[left+1] && right < n) {
+						right++;
+					}
+				} else {
+					return false;
+				}
+			}
+		} 
+		//descending order logic
+		else {
+			while(right < n) {
+				if(nums[left] > nums[right]) {
+					while(nums[left] == nums[left+1] && left < n) {
+						left++;
+					}
+					while(nums[left] == nums[left+1] && right < n) {
+						right++;
+					}
+				} else {
+					return false;
+				}
+			}
+		}
+
+		return true;
+	}
+
+	public static void main(String[] args) {
+		int[] nums = {1, 2, 2, 3};
+		System.out.println(isAscDes(nums));
+
+	}
+
+}
