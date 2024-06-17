@@ -1,0 +1,10 @@
+package com.wissen.FixedSizeSlidingWindow;
+
+public class CountOccurencesOfAnagram50_90_TCPasses {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
