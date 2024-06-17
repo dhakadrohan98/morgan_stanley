@@ -1,0 +1,33 @@
+package com.wissen;
+
+import java.util.*;
+public class GenearateAllSubsequences {
+
+	public void generate(String str) {
+		int n = str.length();
+		String res = "";
+		List<String> list = new ArrayList<>();
+		helper(str, n-1, res);
+	}
+	
+	
+	private void helper(String str, int indx, String res) {
+		//base case
+		if(indx < 0) {
+			
+		}
+		
+		//include current character & move back by one step
+		helper(str, indx-1, res+str.charAt(indx));
+		//exclude current character & move back by one step
+		helper(str, indx-1, res);
+		
+	}
+
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

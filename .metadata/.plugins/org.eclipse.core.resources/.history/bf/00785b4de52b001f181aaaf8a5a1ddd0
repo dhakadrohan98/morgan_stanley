@@ -1,0 +1,5 @@
+package com.wissen;
+
+public class KadaneAlgoNaiveApproach {
+
+}

@@ -1,0 +1,10 @@
+package com.wissen.blind75;
+
+public class ContainsDuplicate {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
