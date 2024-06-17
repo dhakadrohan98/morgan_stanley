@@ -4,8 +4,7 @@ import java.util.Arrays;
 
 public class LongestPalindromicSubsequence {
 
-	//TC: < O(2^n * 2^n) + O(n)
-		//SC: O(n * n) 
+	//TC: < O(2^n * 2^n) + O(n) & SC: O(n * n) 
 	public int longestPalindromeSubseq(String s) {
         //reverse a given string
         StringBuilder sb = new StringBuilder();
