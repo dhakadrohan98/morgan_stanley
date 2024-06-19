@@ -8,8 +8,8 @@ public class FibonacciSeries {
 	// 4,9
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int start = 4;
-		int end = 9;
+		int start =16;
+		int end = 100;
 		int first = 0;
 		int second = 1;
 		int sum = first + second;
@@ -22,6 +22,7 @@ public class FibonacciSeries {
 			second = sum;
 			sum = first+sum;
 		}
+		System.out.println("end of the program");
 			
 		
 	}
