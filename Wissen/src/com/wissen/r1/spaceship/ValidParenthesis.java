@@ -16,13 +16,12 @@ public class ValidParenthesis {
         char[] charArray = str.toCharArray(); 
 
  
-
-   for(char c : charArray){ 
-        if(c =='{' ||c =='('||c =='['){ 
-          stack.push(c); 
-        }else if (c =='}' ||c ==')'||c ==']'){ 
-          if(stack.isEmpty()){ 
-              return false; 
+        for(char c : charArray){ 
+        	if(c =='{' ||c =='('||c =='['){ 
+        		stack.push(c); 
+        	}else if (c =='}' ||c ==')'||c ==']'){ 
+        		if(stack.isEmpty()){ 
+        			return false; 
           } 
 
       char top = stack.pop(); 

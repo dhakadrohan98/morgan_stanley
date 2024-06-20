@@ -1,9 +1,0 @@
-package com.wissen.multithreading;
-
-public class WihtoutSynchronizedKeyword {
-	public static void main(String[] args) throws InterruptedException {
-		TotalEarnings te = new TotalEarnings();
-		te.start();
-		System.out.println("Total earnings: "+ te.total);
-	}
-}

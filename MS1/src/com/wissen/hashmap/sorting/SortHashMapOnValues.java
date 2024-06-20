@@ -1,13 +1,9 @@
 package com.wissen.hashmap.sorting;
 
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.LinkedHashMap;
-import java.util.LinkedList;
-import java.util.List;
 import java.util.Map.Entry;
 import java.util.*;
 
+//sorting in descending order
 public class SortHashMapOnValues {
 
 	public static void main(String[] args) {

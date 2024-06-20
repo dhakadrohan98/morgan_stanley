@@ -1,9 +1,0 @@
-package com.wissen.streamAPI;
-
-public class IteratesInStreamAPIs {
-
-	public static void main(String[] args) {
-		List<String> names = Arrays.asList(2,3,4,5);
-	}
-
-}
