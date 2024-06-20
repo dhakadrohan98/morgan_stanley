@@ -7,36 +7,35 @@ import java.util.*;
 public class BookShelf {
 	private static final int capacity = 50;
 	private static Map<String, Integer> hmap = new HashMap<>();
-	
-	//add as new books
+
+	// add as new books
 	public void addBook(List<String> books) {
 		int size = books.size();
-		
+
 //		int remainingBooksAsReplacement = capacity - books.size();
-		
-		if(hmap.size() <= capacity) {
-			
+
+		if (hmap.size() <= capacity) {
+
 		}
-		
-		for(int i=0; i<size; i++) {
+
+		for (int i = 0; i < size; i++) {
 			String key = books.get(i);
-			if(hmap.size() <= capacity) {
-				//keeping the book as new
+			if (hmap.size() <= capacity) {
+				// keeping the book as new
 				hmap.put(key, 0);
-			}
-			else {
-				//remove least frequently used books & then add new books
-				//leastFreuquently used books
-				//2 3
+			} else {
+				// remove least frequently used books & then add new books
+				// leastFreuquently used books
+				// 2 3
 			}
 		}
 	}
-	
-	//addBook(List<String> books)
-	//getTotalBooks()
-	//getReplacementBook(String oldBookd, String newBook)
-	//removeBooks(String bookName)
-	//removeAllBooks();
+
+	// addBook(List<String> books)
+	// getTotalBooks()
+	// getReplacementBook(String oldBookd, String newBook)
+	// removeBooks(String bookName)
+	// removeAllBooks();
 
 	public static void main(String[] args) {
 		hmap.put("book1", 2);
@@ -49,8 +48,5 @@ public class BookShelf {
 		hmap.put("book8", 11);
 		hmap.put("book9", 10);
 		hmap.put("book10", 12);
-		
-		
 	}
-
 }
