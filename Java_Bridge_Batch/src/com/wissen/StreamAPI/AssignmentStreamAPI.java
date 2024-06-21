@@ -41,6 +41,7 @@ public class AssignmentStreamAPI {
 		Employee emp7 = new Employee("Amrita", 26, 22000, "Suppport Engineer", "female", "IT");
 		Employee emp8 = new Employee("Akhilesh", 29, 23000, "Suppport Engineer", "male", "IT");
 		Employee emp9 = new Employee("Akshata", 19, 20000, "Trainee analyst", "female", "development");
+		Employee emp10 = new Employee("Aakash", 28, 28000, "Software Developer", "male", "development");
 		
 		List<Employee> list = new ArrayList<Employee>();
 		list.add(emp1);
@@ -52,6 +53,7 @@ public class AssignmentStreamAPI {
 		list.add(emp7);
 		list.add(emp8);
 		list.add(emp9);
+		list.add(emp10);
 		
 		System.out.println(list);
 		System.out.println("------------------------------");
@@ -67,22 +69,28 @@ public class AssignmentStreamAPI {
 		System.out.println("------------------------------");
 		
 		System.out.println("Most Junior Employee");
-		List<Employee> mostJuniorEmployee = list.stream().sorted((e1,e2)-> Integer.compare(e1.age, e2.age)).limit(1).collect(Collectors.toList());
-		Employee junior = mostJuniorEmployee.get(0);
-		mostJuniorEmployee.remove(0);
-		//there are more than one most junior (at the same age level)
+		Employee juniorEmployee = list.stream().min(Comparator.comparing(e -> e.age)).orElse(null);
+		List<Employee> juniorEmp = new ArrayList<Employee>();
+		//there are more than one juniors having minimum age (at the same age level)
 		for(int i=0; i<list.size(); i++) {
-			if(junior.age == list.get(i).age) {
-				mostJuniorEmployee.add(list.get(i));
+			if(juniorEmployee.age == list.get(i).age) {
+				juniorEmp.add(list.get(i));
 			}
 		}
-		System.out.println(mostJuniorEmployee);
+		System.out.println(juniorEmp);
 		System.out.println("----------------------");
 		
 		System.out.println("Highest salray paid employee");
 		int maxSalary = 0;
-		List<Employee> maxSalaryEmployee = list.stream().sorted((e1,e2)-> Integer.compare(e2.salary, e1.salary)).limit(1).collect(Collectors.toList());
-		System.out.println(maxSalaryEmployee.get(0));
+		Employee maxSalaryEmployee = list.stream().max(Comparator.comparing(e -> e.salary)).orElse(null);
+		List<Employee> maxSalaryEmp = new ArrayList<Employee>();
+		for(int i=0; i<list.size(); i++) {
+			if(maxSalaryEmployee.salary == list.get(i).salary) {
+				maxSalaryEmp.add(list.get(i));
+			}
+		}
+		System.out.println(maxSalaryEmp);
+		
 		System.out.println("----------------------");
 		
 		System.out.println("Total number of males & females");
