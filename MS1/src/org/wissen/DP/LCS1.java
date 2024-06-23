@@ -9,7 +9,7 @@ public class LCS1 {
         int n2 = text2.length();
         int indx1 = n1 - 1;
         int indx2 = n2 - 1;
-        String backtrack = "";
+        StringBuilder backtrack = new S;
         int[][] dp = new int[n1+1][n2+1];
         for(int[] temp: dp) {
             Arrays.fill(temp, -1);
@@ -31,6 +31,7 @@ public class LCS1 {
         int include = 0;
         if(text1.charAt(indx1) == text2.charAt(indx2)) {
             include = 1 + helper(indx1-1, indx2-1, text1, text2, dp);
+            backtrack +
         }
         int exclude = 0 + Math.max(helper(indx1-1, indx2, text1, text2, dp), helper(indx1, indx2-1, text1, text2, dp));
         
