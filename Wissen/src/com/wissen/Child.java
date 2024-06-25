@@ -1,18 +1,13 @@
-package com.wissen.r1.spaceship;
+package com.wissen;
 
-class Parent1 {
+class Parent {
 
-	Parent (){
-        this("Constructor");
-        System.out.println("Parent class Default Constructor");
-    }
-
-	Parent (String s){
+    Parent (String s){
         System.out.println("Parent Class Param  "+s);
     }
 }
 
-public class Child1 extends Parent1 {
+public class Child extends Parent {
 
     Child (){
         this("Constructor");
