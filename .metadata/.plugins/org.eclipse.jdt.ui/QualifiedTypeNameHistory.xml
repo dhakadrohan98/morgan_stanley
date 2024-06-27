@@ -54,5 +54,7 @@
     <fullyQualifiedTypeName name="java.lang.Exception"/>
     <fullyQualifiedTypeName name="java.util.stream.Stream"/>
     <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="com.wissen.LFUCache.DLLNode"/>
     <fullyQualifiedTypeName name="java.util.HashMap"/>
+    <fullyQualifiedTypeName name="com.wissen.LFUCache.DoublyLinkedList"/>
 </qualifiedTypeNameHistroy>
