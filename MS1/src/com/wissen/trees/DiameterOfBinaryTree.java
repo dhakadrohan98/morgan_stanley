@@ -1,5 +1,6 @@
 package com.wissen.trees;
 
+//below method is modified version of finding height/depth of binary tree
 public class DiameterOfBinaryTree {
 	//TC: O(n)
 	//SC: O(n)
@@ -8,7 +9,7 @@ public class DiameterOfBinaryTree {
         helper(root, diameter);
         return diameter[0];
     }
-    
+     
     private int helper(TreeNode root,int[] diameter) {
         //base case
         if(root == null) {
