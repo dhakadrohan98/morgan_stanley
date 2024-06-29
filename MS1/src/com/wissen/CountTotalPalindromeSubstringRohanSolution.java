@@ -4,9 +4,9 @@ import java.util.*;
 //TC: O(n^2)
 //SC: O(n^2)
 //Note: last three test cases on LC didn't pass
-public class PalindromeSubstringRohanSolution {
+public class CountTotalPalindromeSubstringRohanSolution {
 
-	public int countSubstrings(String s) {
+	public static int countSubstrings(String s) {
         int count = 0;
         int n = s.length();
         Map<String, Boolean> hmap = new HashMap<>();
@@ -21,7 +21,7 @@ public class PalindromeSubstringRohanSolution {
         return count;
     }
     
-    private boolean isPalindrome(String s,int i,int j,Map<String, Boolean> hmap) {
+    private static boolean isPalindrome(String s,int i,int j,Map<String, Boolean> hmap) {
         String key = i+""+j;
         //base case
         if(i >= j) {
@@ -47,7 +47,8 @@ public class PalindromeSubstringRohanSolution {
     }
     
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		String str = "madam";
+		System.out.println(countSubstrings(str));
 
 	}
 

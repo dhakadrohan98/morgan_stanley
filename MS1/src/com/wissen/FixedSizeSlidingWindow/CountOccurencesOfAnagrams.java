@@ -2,6 +2,7 @@ package com.wissen.FixedSizeSlidingWindow;
 
 import java.util.*;
 
+//clean code diagram
 public class CountOccurencesOfAnagrams {
 
 		public static int search(String pat, String txt) {
