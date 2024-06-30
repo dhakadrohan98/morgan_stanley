@@ -55,9 +55,9 @@ public class GCDLargestSmallestGroup {
         System.out.println("The sum of array B: " + finalSum);
     }
     
-    nums1= {1,3,5,7,9,10}
-    nums2 = {2,4,6}
-    
-    nums1 = {-3,-68,0};
-    nums2 = {-4,-65,1}
+//    nums1= {1,3,5,7,9,10}
+//    nums2 = {2,4,6}
+//    
+//    nums1 = {-3,-68,0};
+//    nums2 = {-4,-65,1}
 }
