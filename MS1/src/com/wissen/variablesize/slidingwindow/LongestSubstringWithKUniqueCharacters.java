@@ -30,6 +30,7 @@ public class LongestSubstringWithKUniqueCharacters {
 					}
 					i++;
 				}
+				//again check condition if matching in case of minimum length susbstring with k unique characters
 				if(hmap.size() == k) {
 					longest = Math.max(longest, j-i+1);
 				}
