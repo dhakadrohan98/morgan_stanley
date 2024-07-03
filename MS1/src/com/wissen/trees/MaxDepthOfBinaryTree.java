@@ -6,13 +6,12 @@ public class MaxDepthOfBinaryTree {
             return 0;
         }
         
-        return helper(root, 1);
+        return helper(root, 0);
     }
     
     public int helper(TreeNode root, int level) {
         //base case
         if(root == null) {
-            level--;
             return level;
         }
         
