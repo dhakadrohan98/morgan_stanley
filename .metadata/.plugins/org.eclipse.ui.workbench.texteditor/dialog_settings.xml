@@ -10,7 +10,9 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
+		<item key="selection" value="insert"/>
 		<list key="findhistory">
+			<item value="insert"/>
 			<item value="mostJuniorEmployee"/>
 		</list>
 		<list key="replacehistory">
