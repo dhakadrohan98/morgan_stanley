@@ -12,13 +12,17 @@ public class BookTheaterSeat {
 		
 		synchronized(this) {
 			if(seats <= totalSeats) {
+				System.out.println("-------START----------");
 				System.out.println(seats + " seats are booked successfully");
 				totalSeats = totalSeats - seats;
 				System.out.println("remaining seats are " + totalSeats);
+				System.out.println("-------END----------");
 			}
 			else {
+				System.out.println("-------START----------");
 				System.out.println(seats + " seats can not be booked");
 				System.out.println("remaining seats are " + totalSeats);
+				System.out.println("-------END----------");
 			}
 		}
 		
