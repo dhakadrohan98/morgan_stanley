@@ -2,11 +2,12 @@ package com.wissen.concurrent.collection;
 
 import java.util.HashMap;
 import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.ConcurrentMap;
 
 public class ConcurrentHashMapExample {
 
 	public static void main(String[] args) {
-		HashMap<Integer, String> hmap = new HashMap<>();
+		ConcurrentMap<Integer, String> hmap = new ConcurrentHashMap<>();
 		
 		hmap.put(1, "Alice");
 		hmap.put(2, "Bob");
