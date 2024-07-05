@@ -1,7 +1,7 @@
 package com.wissen.r1.spaceship.oops;
 
 class Parent {
-
+	
     Parent (String s){
         System.out.println("Parent Class Param  "+s);
     }
