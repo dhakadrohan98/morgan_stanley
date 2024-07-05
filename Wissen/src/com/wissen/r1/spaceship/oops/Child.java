@@ -15,7 +15,7 @@ public class Child extends Parent {
     }
 
     Child (String s){
-    	super(s);
+//    	super(s);
         System.out.println("Child Class Param Constructor "+s);
     }
 

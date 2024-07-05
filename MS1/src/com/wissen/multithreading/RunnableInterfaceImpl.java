@@ -1,4 +1,4 @@
-package com.wissen.multithread;
+package com.wissen.multithreading;
 
 public class RunnableInterfaceImpl implements Runnable {
 	
