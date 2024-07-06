@@ -1,6 +1,6 @@
 package com.wissen.multithreading;
 
-public class EvenOddPrinter {
+public class EvenOddPrinterNotUnderstoodableProgram {
 	private int counter = 1;
 	private static final int N = 10;
 	
@@ -45,7 +45,7 @@ public class EvenOddPrinter {
 	}
 	
 	public static void main(String[] args) {
-		EvenOddPrinter printer = new EvenOddPrinter();
+		EvenOddPrinterNotUnderstoodableProgram printer = new EvenOddPrinterNotUnderstoodableProgram();
 		Thread th1 = new Thread(printer::printEvenNumber);
 		Thread th2 = new Thread(printer::printOddNumber);
 		th1.start();

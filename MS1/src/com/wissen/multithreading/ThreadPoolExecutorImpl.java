@@ -2,6 +2,7 @@ package com.wissen.multithreading;
 
 import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.Executor;
+import java.util.concurrent.ExecutorService;
 import java.util.concurrent.RejectedExecutionHandler;
 import java.util.concurrent.ThreadFactory;
 import java.util.concurrent.ThreadPoolExecutor;
@@ -9,10 +10,10 @@ import java.util.concurrent.TimeUnit;
 
 public class ThreadPoolExecutorImpl {
 	public static void main(String[] args) {
-		ThreadPoolExecutor executor = new ThreadPoolExecutor(2, 4, 10, TimeUnit.MINUTES,
+		ExecutorService executor = new ThreadPoolExecutor(2, 4, 10, TimeUnit.MINUTES,
 				new ArrayBlockingQueue<Runnable>(2), new CustomThreadFactory(), 
 				new CustomRejectHandler());
-
+		
 		for (int i = 1; i <= 10; i++) {
 			executor.submit(() -> {
 				try {
