@@ -7,7 +7,7 @@ public class EvenOddUsingTwoThreads {
 	private int n;
 	private int currentNumber = 1;
 	//class level locking
-	private final Object lock = new Object();
+	private static final Object lock = new Object();
 	
 	public EvenOddUsingTwoThreads(int n) {
 		this.n = n;
