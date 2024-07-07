@@ -3,7 +3,7 @@ package com.wissen.multithreading;
 import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.BlockingQueue;
 
-public class ProducerConsumerProblem {
+public class ProducerConsumerProblemSolution {
 
 	public static void main(String[] args) {
 		BlockingQueue<Integer> buffer = new ArrayBlockingQueue<>(10);
@@ -11,7 +11,7 @@ public class ProducerConsumerProblem {
 		Thread producer = new Thread(() -> {
 			try {
 				for (int i = 0; i < 10; i++) {
-					buffer.put(i);
+					buffer.offer(i);
 					System.out.println("Produced: " + i);
 				}
 			} catch (Exception e) {
