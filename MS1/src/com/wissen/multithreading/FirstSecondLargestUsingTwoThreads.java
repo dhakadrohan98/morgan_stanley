@@ -29,10 +29,11 @@ class LargestElementsTask extends Thread {
 	}
 }
 
-public class LargestElements {
+public class FirstSecondLargestUsingTwoThreads {
 
 	public static void main(String[] args) throws InterruptedException {
 		int[] arr = { 10, 20, 4, 45, 99, 23, 78, 56, 89, 12 };
+		//arr.length = 10;
 		int numThreads = 4;
 		int segmentSize = arr.length / numThreads;
 		LargestElementsTask[] threads = new LargestElementsTask[numThreads];
@@ -40,7 +41,9 @@ public class LargestElements {
 
 		for (int i = 0; i < numThreads; i++) {
 			int start = i * segmentSize;
+//			System.out.println("i: " + i + " - start: " + start);
 			int end = (i == numThreads - 1) ? arr.length : start + segmentSize;
+//			System.out.println("i: " + i + " - end: " + end);
 			results[i] = new int[2];
 			threads[i] = new LargestElementsTask(arr, start, end, results[i]);
 			threads[i].start();

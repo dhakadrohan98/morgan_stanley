@@ -7,6 +7,7 @@ public class EvenOddUsingTwoThreads {
 	private int n;
 	private int currentNumber = 1;
 	//class level locking
+	//the new Object() is not automatically called; it’s just used as a shared lock for synchronization
 	private static final Object lock = new Object();
 	
 	public EvenOddUsingTwoThreads(int n) {
