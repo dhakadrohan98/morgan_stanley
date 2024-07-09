@@ -48,5 +48,4 @@ public class PartitionEqualSubsetProblemTabulation {
 	    // The final result is stored in the bottom-right cell of the DP table
 	    return dp[n][k];
 	}
-
 }
