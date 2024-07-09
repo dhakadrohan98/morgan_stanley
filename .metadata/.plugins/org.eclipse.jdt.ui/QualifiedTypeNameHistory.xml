@@ -16,7 +16,6 @@
     <fullyQualifiedTypeName name="java.util.HashMap"/>
     <fullyQualifiedTypeName name="com.wissen.LFUCache.DoublyLinkedList"/>
     <fullyQualifiedTypeName name="java.awt.KeyEventDispatcher"/>
-    <fullyQualifiedTypeName name="java.util.Arrays"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="com.wissen.design.datastructure.Node"/>
     <fullyQualifiedTypeName name="java.lang.StringBuffer"/>
@@ -60,4 +59,5 @@
     <fullyQualifiedTypeName name="java.util.concurrent.FutureTask"/>
     <fullyQualifiedTypeName name="com.wissen.multithreading.Display"/>
     <fullyQualifiedTypeName name="java.lang.Runnable"/>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
 </qualifiedTypeNameHistroy>
