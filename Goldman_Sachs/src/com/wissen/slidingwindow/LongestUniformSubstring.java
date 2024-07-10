@@ -4,8 +4,6 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 public class LongestUniformSubstring {
-	
-	
 	//TC: O(n)
 	//SC: O(1)
 	public static int[] longestUniformSubstring(String str) {
