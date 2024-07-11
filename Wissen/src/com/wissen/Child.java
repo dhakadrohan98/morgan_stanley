@@ -2,6 +2,10 @@ package com.wissen;
 
 class Parent {
 
+	Parent() {
+		
+	}
+	
     Parent (String s){
         System.out.println("Parent Class Param  "+s);
     }

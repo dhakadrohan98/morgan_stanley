@@ -8,7 +8,6 @@ public class Student implements Comparable<Student> {
 	long phone;
 	
 	public Student(int id, String name, String email, long phone) {
-		super();
 		this.id = id;
 		this.name = name;
 		this.email = email;
@@ -17,6 +16,9 @@ public class Student implements Comparable<Student> {
 
 	@Override
 	public int compareTo(Student s) {
+		if(this.name.equals(s.name)) {
+			return s.id - this.id;
+		}
 		return this.name.compareTo(s.name);
 	}
 

@@ -1,4 +1,4 @@
-package com.wissen.corejava;
+package com.wisse.core.java;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
