@@ -1,10 +1,10 @@
-package com.wissen.hashmap.sorting;
+package com.wissen.sorting;
 
 import java.util.Map.Entry;
 import java.util.*;
 
 //sorting in descending order
-public class SortHashMapOnValues {
+public class SortHashMapOnValuesLambdaExpression {
 
 	public static void main(String[] args) {
 		HashMap<String, Integer> hashMap = new HashMap<>();

@@ -1,4 +1,4 @@
-package com.wissen.generic.collections;
+package com.wissen.CollectionsFramework;
 
 import java.util.ArrayList;
 import java.util.List;
