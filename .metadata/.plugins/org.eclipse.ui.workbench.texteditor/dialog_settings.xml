@@ -12,6 +12,7 @@
 		<item key="isRegEx" value="false"/>
 		<item key="selection" value="insert"/>
 		<list key="findhistory">
+			<item value="package com.wissen.twopointers;"/>
 			<item value="insert"/>
 			<item value="mostJuniorEmployee"/>
 		</list>
