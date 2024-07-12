@@ -20,7 +20,7 @@ public class SortHashMapValuesUsingStreamAPI {
 		
 		Map<String, Integer> lhs = new LinkedHashMap<>();
 		
-		hmap.entrySet().stream().sorted(Map.Entry.<String, Integer>comparingByKey().reversed())
+		hmap.entrySet().stream().sorted(Map.Entry.<String, Integer>comparingByValue().reversed())
 		.forEach(entry -> lhs.put(entry.getKey(), entry.getValue()));
 		
 		System.out.println(lhs);

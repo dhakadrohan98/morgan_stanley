@@ -1,13 +1,13 @@
 package com.wissen.concurrent.collection;
 
-import java.util.HashMap;
+import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentMap;
 
 public class ConcurrentHashMapExample {
 
 	public static void main(String[] args) {
-		ConcurrentMap<Integer, String> hmap = new ConcurrentHashMap<>();
+		Map<Integer, String> hmap = new HashMap<>();
 		
 		hmap.put(1, "Alice");
 		hmap.put(2, "Bob");
@@ -17,7 +17,9 @@ public class ConcurrentHashMapExample {
 		// Retrieve a value by key
         System.out.println("Value for key 2: " + hmap.get(2));
         hmap.put(2, "Updated Bob");
+        System.out.println(hmap);
         
+        //remove key 2
         hmap.remove(2);
         System.out.println("Size: " + hmap.size());
         System.out.println(hmap);
