@@ -1,6 +1,7 @@
-package com.wissen.sorting;
+package com.wissen.stream.API;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
@@ -98,12 +99,12 @@ public class StreamAPIAssignmentsCustomClass {
 		System.out.println("------------------------------");
 		
 		System.out.println("Most junior employee");
-		Employee juniorEmp = list.stream().min((o1, o2) -> o1.age - o2.age).orElse(null);
+		Employee juniorEmp = list.stream().min(Comparator.comparing(e -> e.age)).orElse(null);
 		System.out.println(juniorEmp);
 		System.out.println("------------------------------");
 		
-		System.out.println("highest salary paid employee");
-		Employee highestSalPaidEmp = list.stream().max((o1, o2) -> o1.salary - o2.salary).orElse(null);
+		System.out.println("Highest salary paid employee");
+		Employee highestSalPaidEmp = list.stream().max(Comparator.comparing(e -> e.salary)).orElse(null);
 		System.out.println(highestSalPaidEmp);
 		System.out.println("------------------------------");
 		

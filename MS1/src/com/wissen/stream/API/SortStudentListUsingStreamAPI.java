@@ -1,8 +1,10 @@
-package com.wissen.sorting;
+package com.wissen.stream.API;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
+
+import com.wissen.sorting.Student;
 
 public class SortStudentListUsingStreamAPI {
 
