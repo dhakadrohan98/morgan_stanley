@@ -19,7 +19,7 @@ public class SortHashMapOnValuesLambdaExpression {
         	map.getKey();
         }
         // Create a list from the HashMap entries
-        List<Entry<String, Integer>> list = new LinkedList<>(hashMap.entrySet());
+        List<Entry<String, Integer>> list = new ArrayList<>(hashMap.entrySet());
 
         // Sort the list by values
         Collections.sort(list, (o1, o2) -> o1.getValue()-  o2.getValue());
