@@ -55,7 +55,7 @@ public class MinimumSizeSubarraySum {
 
 	public static void main(String[] args) {
 		// Test case 1
-		int[] nums = { 2, 3, 1, 2, 4, 3 };
+		int[] nums = {2, 3, 1, 2, 4, 3};
 		int target = 7;
 		// Test case 2
 		int[] nums1 = { 1, 4, 4 };
