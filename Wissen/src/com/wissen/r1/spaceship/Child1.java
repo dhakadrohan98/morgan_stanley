@@ -1,29 +1,30 @@
-package com.wissen.r1.spaceship.oops;
+package com.wissen.r1.spaceship;
 
 class Parent1 {
-	
+
+	Parent1() {
+		this("Constructor");
+		System.out.println("Parent class Default Constructor");
+	}
+
 	Parent1(String s) {
 		System.out.println("Parent Class Param  " + s);
 	}
 }
 
-public class Child11 extends Parent1 {
+public class Child1 extends Parent1 {
 
-	Child11() {
-		this("Constructor");
+	Child1() {
+		super("Constructor");
 		System.out.println("Child Class Default Constructor");
 	}
 
-	Child11(String s) {
-//    	super(s);
+	Child1(String s) {
 		System.out.println("Child Class Param Constructor " + s);
 	}
 
 	public static void main(String[] args) {
-		Child11 obj = new Child11();
+		Child1 obj = new Child1();
 	}
 
 }
-
-nums1 = {1,2,0,3,0,4,0,7};
-nums2 = {4,6,7,0,9,0,0,9,9,10,11};

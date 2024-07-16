@@ -4,23 +4,23 @@ class Parent {
 
     Parent (){
         this("Constructor");
-        System.out.println("Parent class Default Constructor");
+        System.out.println("Parent Class Default Constructor");
     }
 
     Parent (String s){
-        System.out.println("Parent Class Param  "+s);
+        System.out.println("Parent Class param  "+s);
     }
 }
 
 public class Child extends Parent {
 
     Child (){
-        super("Constructor");
+        this("Constructor");
         System.out.println("Child Class Default Constructor");
     }
 
     Child (String s){
-        System.out.println("Child Class Param Constructor "+s);
+        System.out.println("Child Class param Constructor "+s);
     }
 
     public static void main(String[] args) {
