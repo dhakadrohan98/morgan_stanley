@@ -10,7 +10,6 @@ public class ContiguousSubarraySum {
 	        Map<Integer, Integer> hmap = new HashMap<>();
 	        hmap.put(0, -1);
 	        int n = nums.length;
-	        
 	        for(int j=0; j<n; j++) {
 	            prefixSum += nums[j];
 	            //store prefixSum % k into prefixSum instead of prefixSum += nums[itr]
