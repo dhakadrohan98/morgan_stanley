@@ -6,7 +6,8 @@ public class FractionToDecimalRecurring {
 	
 //	In the worst case, the loop iterates through all possible remainders (from 1 to denominator - 1).
 //	Therefore, TC: O(denominator).
-//	The maximum number of entries in the HashMap is equal to the denominator (since the remainder can take values from 1 to denominator - 1).
+//	The maximum number of entries in the HashMap is equal to the denominator (since the remainder 
+//	can take values from 1 to denominator - 1).
 //	Thus, SC: O(denominator).
 	public static String fractionToDecimal(int numerator, int denominator) {
 
@@ -16,9 +17,7 @@ public class FractionToDecimalRecurring {
 
 		// Handle the sign
 		if (numerator != 0) {
-			if (numerator < 0 && denominator < 0) {
-				//
-			} else if (numerator < 0 || denominator < 0) {
+			if (numerator < 0 || denominator < 0) {
 				ans.append("-");
 			}
 		}
@@ -61,6 +60,14 @@ public class FractionToDecimalRecurring {
 		int num = 93;
 		int den = 7;
 		System.out.println(fractionToDecimal(num, den));
+		
+		System.out.println("13.285714");
+		StringBuilder sb = new StringBuilder();
+		sb.append("13.285714");
+		sb.insert(3, "(");
+		System.out.println(sb.toString());
+		sb.insert(10, ")");
+		System.out.println(sb.toString());
 	}
 
 }

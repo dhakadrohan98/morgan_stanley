@@ -51,6 +51,18 @@ public class LongestWordInDictionaryThroughDeleting {
 		List<String> list1 = Arrays.asList("a", "b", "c");
 		String longestWord = findLongestWord(str, list1);
 		System.out.println(longestWord);
+		
+		System.out.println("----------------");
+		String str1 = "Apple";
+		String str2 = "Applz";
+		//compareToIgnoreCase() will subtract each & every character's ASCII value with corresponding 
+		//character of str2. If value is negative it means str1 is lexicographically smaller than str2, 
+		//if value is greater it means, str1 is lexicographically greater than str2.
+		//If value are equal it means str1 & str2 are equal lexicographically
+		
+		System.out.println(str1.compareToIgnoreCase(str2));
+		
+		System.out.println(str2.compareToIgnoreCase(str1));
 	}
 
 }
