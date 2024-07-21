@@ -1,4 +1,4 @@
-package com.wissen.DP;
+package com.wissen.dp;
 
 public class JumpGame {
 	//very tricky
