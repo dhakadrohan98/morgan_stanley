@@ -15,7 +15,8 @@ class Parent {
 public class Child extends Parent {
 
     Child (){
-        this("Constructor");
+        super("Constructor");
+//    	this("Constructor");
         System.out.println("Child Class Default Constructor");
     }
 
