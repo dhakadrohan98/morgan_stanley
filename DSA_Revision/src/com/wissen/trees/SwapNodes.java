@@ -8,13 +8,12 @@ import java.util.*;
 //    https://www.hackerrank.com/challenges/swap-nodes-algo/problem
 class Node {
     int value;
+    int data;
     Node left;
     Node right;
     
     Node(int value) {
         this.value = value;
-        left = null;
-        right = null;
     }
 }
 
