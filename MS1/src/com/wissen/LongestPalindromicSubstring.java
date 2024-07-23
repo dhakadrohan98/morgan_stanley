@@ -13,6 +13,7 @@ public class LongestPalindromicSubstring {
             int len2 = expandFromCenter(s,i,i);//for odd length of string
             int maxLen = Math.max(len1, len2);
             if(end - start < maxLen) {
+            	
                 start = i - (maxLen - 1)/2;
                 end = i + maxLen/2;
             }
