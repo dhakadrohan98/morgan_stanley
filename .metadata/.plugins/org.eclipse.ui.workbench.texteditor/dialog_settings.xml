@@ -10,8 +10,10 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="Employee1"/>
+		<item key="selection" value="data"/>
 		<list key="findhistory">
+			<item value="data"/>
+			<item value="val"/>
 			<item value="Employee"/>
 			<item value="package com.wissen.twopointers;"/>
 			<item value="insert"/>
