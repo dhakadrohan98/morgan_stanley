@@ -31,7 +31,11 @@ public class SchedulerExecutorServiceExample {
 
 		// Schedule task2 to run after 5 seconds
 		threadPool.schedule(task2, 5, TimeUnit.SECONDS);
-
+		/*
+		 * Initiates an orderly shutdown in which previously submittedtasks are
+		 * executed, but no new tasks will be accepted.Invocation has no additional
+		 * effect if already shut down.
+		 */
 		threadPool.shutdown();
 	}
 }
