@@ -6,8 +6,8 @@ import java.util.Scanner;
 
 public class DFSAdjacencyMatrix {
 	
-	//TC: O(V^2)
-	//SC: O(V^2), v-> total no. of vertexes in a graph
+	//TC: O(V+E) e-> total edges in the graph
+	//SC: O(V), v-> total no. of vertexes in a graph
 	private static void printDFS(int[][] adjMat, int sv) {
 		int v = adjMat.length;
 		boolean[] visited = new boolean[v];
@@ -27,7 +27,7 @@ public class DFSAdjacencyMatrix {
 		
 	}
 	
-	
+	//TC: O(V+E)
 	private static void printBFS(int[][] adjMat, int sv) {
 		int v = adjMat.length;
 		boolean[] visited = new boolean[v];
