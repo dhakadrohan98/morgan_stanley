@@ -13,7 +13,7 @@ public class TestDeadLockEx {
 				}
 
 				try {
-					Thread.sleep(500);
+					Thread.sleep(5000);
 				} catch (InterruptedException e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
@@ -32,7 +32,7 @@ public class TestDeadLockEx {
 				}
 
 				try {
-					Thread.sleep(500);
+					Thread.sleep(5000);
 				} catch (InterruptedException e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();

@@ -17,7 +17,7 @@ public class ThreadPoolExecutorImpl {
 		for (int i = 1; i <= 10; i++) {
 			executor.submit(() -> {
 				try {
-					Thread.sleep(5000);
+					Thread.sleep(2000);
 				} catch (Exception e) {
 					System.out.println(e.getMessage());
 				}
@@ -47,3 +47,7 @@ class CustomRejectHandler implements RejectedExecutionHandler {
 		System.out.println("Task rejected: " + r.toString());
 	}
 }
+
+//Explanation
+//4 tasks has been rejected because corePooSize=2, maximumPoolSize = 4, keepAliveTime = 10, 
+//BlockingQueue.size = 2 can accommodate two tasks at most at a time
