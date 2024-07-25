@@ -11,11 +11,12 @@ public class ProducerConsumerProblemSolution {
 		Thread producer = new Thread(() -> {
 			try {
 				for (int i = 0; i < 10; i++) {
-					buffer.offer(i);
+					buffer.put(i); //Use put() to handle buffer overflow
 					System.out.println("Produced: " + i);
 				}
 			} catch (Exception e) {
 				Thread.currentThread().interrupt();
+				System.err.println("Producer was interrupted");
 			}
 		});
 
@@ -27,9 +28,10 @@ public class ProducerConsumerProblemSolution {
 				}
 			} catch (Exception e) {
 				Thread.currentThread().interrupt();
+				System.err.println("Consumer was interrupted");
 			}
 		});
-		
+
 		producer.start();
 		consumer.start();
 	}
