@@ -7,7 +7,7 @@ import java.util.concurrent.ConcurrentMap;
 public class ConcurrentHashMapExample {
 
 	public static void main(String[] args) {
-		Map<Integer, String> hmap = new HashMap<>();
+		Map<Integer, String> hmap = new ConcurrentHashMap<>();
 		
 		hmap.put(1, "Alice");
 		hmap.put(2, "Bob");
