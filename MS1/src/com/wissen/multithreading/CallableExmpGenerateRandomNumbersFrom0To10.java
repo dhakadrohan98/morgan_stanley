@@ -45,6 +45,7 @@ public class CallableExmpGenerateRandomNumbersFrom0To10 {
 
 		// receive the random numbers.
 		for (int i = 0; i < 10; i++) {
+			//get(): Waits if necessary for the computation to complete, and then retrieves its result.
 			int num = (int) randomNoTasks[i].get();
 			System.out.println("The random number is " + num);
 		}

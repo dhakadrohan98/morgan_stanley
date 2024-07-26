@@ -20,6 +20,12 @@ public class ThreadClassExample extends Thread {
 		ThreadClassExample th2 = new ThreadClassExample();
 		
 		th1.start();
+		try {
+			th1.join();
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		th2.start();
 	}
 }
