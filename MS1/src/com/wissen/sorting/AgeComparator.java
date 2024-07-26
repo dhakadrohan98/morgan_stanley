@@ -2,6 +2,10 @@ package com.wissen.sorting;
 
 import java.util.Comparator;
 
+//modified version of TimSort
+//TC: O(n * logn)
+//SC: O(n) additional space for merging operations during sorting..
+
 public class AgeComparator implements Comparator<Student> {
 	
 	@Override
