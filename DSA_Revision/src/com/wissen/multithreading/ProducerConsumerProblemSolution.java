@@ -11,6 +11,8 @@ public class ProducerConsumerProblemSolution {
 		Thread producer = new Thread(() -> {
 			try {
 				for (int i = 0; i < 10; i++) {
+					//Inserts the specified element into this queue, waiting if 
+					//necessary for space to become available
 					buffer.put(i); //Use put() to handle buffer overflow
 					System.out.println("Produced: " + i);
 				}
@@ -23,6 +25,8 @@ public class ProducerConsumerProblemSolution {
 		Thread consumer = new Thread(() -> {
 			try {
 				for (int i = 0; i < 10; i++) {
+					//Retrieves and removes the head of this queue, waiting if necessary
+					//until an element becomes available.
 					int value = buffer.take();
 					System.out.println("Consumed: " + value);
 				}
