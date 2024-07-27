@@ -6,7 +6,7 @@ public class _01Kanpsack {
 	
 	//TC: O(2^(m*n))
 	//SC: O(n+m) stack space + O(m*n) memoizatoin two dp
-	static int knapSack(int W, int wt[], int val[], int n) 
+	public static int knapSack(int W, int wt[], int val[], int n) 
     { 
 		int[][] dp = new int[n+1][W+1];
 		for(int[] temp: dp) {
