@@ -6,7 +6,7 @@ public class LongestCommonSubsequence {
 
 	//TC: < O(2^n * 2^m)
     //SC: < O(n * m)
-    public int longestCommonSubsequence(String str1, String str2) {
+    public static int longestCommonSubsequence(String str1, String str2) {
         int n1 = str1.length();
         int n2 = str2.length();
         int indx1 = str1.length() -1;
@@ -20,7 +20,7 @@ public class LongestCommonSubsequence {
         return helper(str1, str2, indx1, indx2, dp);
     }
     
-    public int helper(String str1, String str2, int indx1, int indx2, int[][] dp) {
+    public static int helper(String str1, String str2, int indx1, int indx2, int[][] dp) {
         //base case
         if(indx1 < 0 || indx2 < 0) {
             return 0;
@@ -40,7 +40,9 @@ public class LongestCommonSubsequence {
     }
     
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		String str1 = "AGGTAB";
+        String str2 = "GXTXAYB";
+        System.out.println("Length of LCS: " + longestCommonSubsequence(str1, str2));
 
 	}
 
