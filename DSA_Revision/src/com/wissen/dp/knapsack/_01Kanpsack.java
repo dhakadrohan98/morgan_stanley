@@ -15,7 +15,7 @@ public class _01Kanpsack {
         return solve(n-1, W, wt, val, dp);
     }
 
-	static int solve(int indx, int W, int[] wt, int[] val, int[][] dp) {
+	private static int solve(int indx, int W, int[] wt, int[] val, int[][] dp) {
 		// base case
 		if (indx < 0) {
 			return 0;
