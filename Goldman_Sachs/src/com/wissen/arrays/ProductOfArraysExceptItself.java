@@ -6,6 +6,11 @@ public class ProductOfArraysExceptItself {
 	// SC: O(3*N)
 	public int[] productExceptSelf(int[] nums) {
 		int n = nums.length;
+		
+		//edge case
+		if(n == 0) {
+			return new int[0];
+		}
 		int[] prefix = new int[n];
 		int[] suffix = new int[n];
 		int[] res = new int[n];
@@ -28,7 +33,8 @@ public class ProductOfArraysExceptItself {
 	}
 
 	public static void main(String[] args) {
-		
+		int[] nums1 = {1,2,3,4}; //[24,12,8,6]
+		int[] nums2 = {-1,1,0,-3,3}; // [0,0,9,0,0]
 	}
 
 }
