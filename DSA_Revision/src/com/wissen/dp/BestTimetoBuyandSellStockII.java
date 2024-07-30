@@ -35,7 +35,11 @@ public class BestTimetoBuyandSellStockII {
     }
     
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		int[] nums1 = {7,1,5,3,6,4};
+		int[] nums2 = {1,2,3,4,5};
+		BestTimetoBuyandSellStockII obj = new BestTimetoBuyandSellStockII();
+		
+		System.out.println(obj.maxProfit(nums1));
 
 	}
 
