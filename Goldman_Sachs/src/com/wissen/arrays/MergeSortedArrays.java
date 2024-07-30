@@ -7,6 +7,10 @@ public class MergeSortedArrays {
 	    int i = m - 1; // Pointer for nums1
 	    int j = n - 1; // Pointer for nums2
 	    int k = m + n - 1; // Pointer for the merged array
+	    
+	    if(n == 0) {
+	    	return;
+	    }
 
 	    while (i >= 0 && j >= 0) {
 	        if (nums1[i] > nums2[j]) {
@@ -28,9 +32,9 @@ public class MergeSortedArrays {
 	}
 	    
 	public static void main(String[] args) {
-		int[] nums1 = {1,2,3,0,0,0};
+		int[] nums1 = {1,2,3,0,0,0};  //{1,2,2,3,4,6}
 		int[] nums2 = {2,5,6};
-		int[] nums3 = {7,8,9,0,0,0};
+		int[] nums3 = {7,8,9,0,0,0}; //{2,5,6,7,8,9}
 		int m =3;
 		int n = nums2.length;
 		
