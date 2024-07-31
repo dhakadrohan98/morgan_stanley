@@ -52,3 +52,9 @@ public class MinStackDesign {
         return mini.intValue();
     }
 }
+
+//Test cases
+// 1. i/p:
+// ["MinStack","push","push","push","getMin","pop","top","getMin"]
+// [[],[-2],[0],[-3],[],[],[],[]]
+// o/p: [null,null,null,null,-3,null,0,-2]

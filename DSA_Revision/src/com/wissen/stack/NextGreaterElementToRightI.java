@@ -18,7 +18,7 @@ public class NextGreaterElementToRightI {
                 while(!st.isEmpty() && st.peek() <= arr[i]) {
                     st.pop();
                 }
-                //if stack is not empty means we found greater elemenet on the top of stack
+                //if stack is not empty means we found greater element on the top of stack
                 if(!st.isEmpty()) {
                     ans[i] = st.peek();
                 } else { //stack is empty, greater element is not present there
