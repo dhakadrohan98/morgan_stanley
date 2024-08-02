@@ -47,6 +47,8 @@ public class TestDeadLockEx {
 
 		th1.start();
 		th2.start();
+		
+		th1.stop();
 
 	}
 
