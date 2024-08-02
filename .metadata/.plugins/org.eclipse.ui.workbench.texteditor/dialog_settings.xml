@@ -10,8 +10,14 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="data"/>
+		<item key="selection" value="res"/>
 		<list key="findhistory">
+			<item value="res"/>
+			<item value="key"/>
+			<item value="outer"/>
+			<item value="isOuter"/>
+			<item value="list"/>
+			<item value="hmap.put("/>
 			<item value="data"/>
 			<item value="val"/>
 			<item value="Employee"/>
