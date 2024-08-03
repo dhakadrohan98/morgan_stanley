@@ -1,16 +1,19 @@
 package com.wissen.math;
 
+import java.util.Arrays;
+
 public class NumberPairsDivisibleBy60 {
 	
 	public static int numPairsDivisibleBy60(int[] nums) {
-        int[] remainderMap = new int[60];
+		long[] remainderMap = new long[60];
+//        Arrays.fill(remainderMap, 0L); // Initialize the array with 0L
         int n = nums.length;
         
         for(int i=0; i<n; i++) {
             int indx = nums[i] % 60;
             remainderMap[indx] += 1;
         }
-        int ans = 0;
+        long ans = 0L;
         //20 -> 40
         //40 -> 60
         //count above one as one pair
@@ -32,7 +35,7 @@ public class NumberPairsDivisibleBy60 {
             ans += (remainderMap[30] * (remainderMap[30] - 1)) / 2;
         }
       
-        return ans;
+        return (int) ans;
     }
 	
 	public static void main(String[] args) {
