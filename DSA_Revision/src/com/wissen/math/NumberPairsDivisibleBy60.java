@@ -35,7 +35,7 @@ public class NumberPairsDivisibleBy60 {
             ans += (remainderMap[30] * (remainderMap[30] - 1)) / 2;
         }
       
-        return (int) ans;
+        return (int)ans;
     }
 	
 	public static void main(String[] args) {
