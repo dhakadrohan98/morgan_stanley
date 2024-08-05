@@ -45,7 +45,7 @@ public class HeightChecker {
 	}
 
 	public static void main(String[] args) {
-		int[] nums = {1,1,4,2,1,7};
+		int[] nums = {1,1,4,2,1,3};
 		System.out.println(heightChecker(nums));
 		
 		int[] nums2 = {5,1,2,3,4};
