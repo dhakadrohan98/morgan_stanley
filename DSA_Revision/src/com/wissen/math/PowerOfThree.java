@@ -14,7 +14,7 @@ public class PowerOfThree {
 	        n /= 3;
 	    }
 	    
-	    // If n becomes 1, it is a power of three
+	    // If n becomes 1, it is a power of three otherwise not
 	    return n == 1;
 	}
 	 
