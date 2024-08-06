@@ -2,7 +2,6 @@ package com.wissen;
 
 import java.util.HashMap;
 
-
 //TC: O(1)
 //SC: O(n)
 //n is the capacity of the cache
