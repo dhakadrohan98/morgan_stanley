@@ -8,7 +8,7 @@ import java.util.HashMap;
 
 //DLL: Doubly linked list
 public class LRUCache {
-	//Node class of key -> value pair
+	//Node class of key -> value pair	
 	private class Node {
 		int key, value;
 		Node prev, next;
