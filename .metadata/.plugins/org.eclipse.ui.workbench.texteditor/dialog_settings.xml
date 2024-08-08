@@ -10,8 +10,9 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="res"/>
+		<item key="selection" value="System.out.println"/>
 		<list key="findhistory">
+			<item value="System.out.println"/>
 			<item value="res"/>
 			<item value="key"/>
 			<item value="outer"/>

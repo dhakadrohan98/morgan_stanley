@@ -10,7 +10,7 @@ public class SquaresOfNumbers {
 		
 		list = list.stream().filter(n -> n%2 != 0).map(n -> n*n).collect(Collectors.toList());
 		System.out.println(list);
-
+		
+		list = list.stream().filter(n -> n % 2 != 0).map(n -> n*n).collect(Collectors.toList());
 	}
-
 }

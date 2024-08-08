@@ -11,6 +11,7 @@ public class LevelOrderTraversal {
         }
         Queue<TreeNode> queue = new LinkedList<>();
         queue.offer(root);
+        int level = 0;
 
         while(!queue.isEmpty()) {
             int size = queue.size();
@@ -27,6 +28,8 @@ public class LevelOrderTraversal {
                     queue.offer(node.right);
                 }   
             }
+            //calculate for level
+            level++;
             res.add(new ArrayList<>(tempList));
         }
         return res;
