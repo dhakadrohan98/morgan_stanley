@@ -4,7 +4,7 @@ public class RemoveDuplicatesfromSortedArray {
 	
 	//TC: O(n)
 	//SC: O(1)
-	public int removeDuplicates(int[] nums) {
+	public static int removeDuplicates(int[] nums) {
         int n = nums.length;
         //base case
         if(n == 1) {
@@ -27,7 +27,8 @@ public class RemoveDuplicatesfromSortedArray {
     }
 	
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		int[] nums1 = {0,0,1,1,1,1,2,3,3};
+		System.out.println(removeDuplicates(nums1));
 
 	}
 

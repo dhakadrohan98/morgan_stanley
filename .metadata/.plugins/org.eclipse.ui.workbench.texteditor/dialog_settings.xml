@@ -10,8 +10,11 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="System.out.println"/>
+		<item key="selection" value="belowTen"/>
 		<list key="findhistory">
+			<item value="hmap"/>
+			<item value="belowTen"/>
+			<item value="number"/>
 			<item value="System.out.println"/>
 			<item value="res"/>
 			<item value="key"/>
@@ -24,9 +27,10 @@
 			<item value="Employee"/>
 			<item value="package com.wissen.twopointers;"/>
 			<item value="insert"/>
-			<item value="mostJuniorEmployee"/>
 		</list>
 		<list key="replacehistory">
+			<item value="belowTen"/>
+			<item value="hmap"/>
 			<item value="Employee1"/>
 		</list>
 	</section>
