@@ -10,8 +10,9 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="belowTen"/>
+		<item key="selection" value="construct"/>
 		<list key="findhistory">
+			<item value="construct"/>
 			<item value="hmap"/>
 			<item value="belowTen"/>
 			<item value="number"/>
@@ -26,7 +27,6 @@
 			<item value="val"/>
 			<item value="Employee"/>
 			<item value="package com.wissen.twopointers;"/>
-			<item value="insert"/>
 		</list>
 		<list key="replacehistory">
 			<item value="belowTen"/>
