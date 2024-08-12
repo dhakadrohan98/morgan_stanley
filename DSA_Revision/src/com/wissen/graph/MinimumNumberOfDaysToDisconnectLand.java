@@ -1,6 +1,8 @@
 package com.wissen.graph;
 
 public class MinimumNumberOfDaysToDisconnectLand {
+	//TC: O(m*n)^2
+	//SC: O(m*n)
 	public int minDays(int[][] grid) {
 		int m = grid.length;
 		int n = grid[0].length;
