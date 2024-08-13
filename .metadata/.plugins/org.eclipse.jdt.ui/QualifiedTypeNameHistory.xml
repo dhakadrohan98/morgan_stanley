@@ -52,7 +52,6 @@
     <fullyQualifiedTypeName name="com.wissen.array.RotateArray"/>
     <fullyQualifiedTypeName name="java.util.Map"/>
     <fullyQualifiedTypeName name="java.util.HashMap"/>
-    <fullyQualifiedTypeName name="java.util.Arrays"/>
     <fullyQualifiedTypeName name="java.util.function.Predicate"/>
     <fullyQualifiedTypeName name="java.util.stream.Collectors"/>
     <fullyQualifiedTypeName name="com.wissen.oops.InterfaceA"/>
@@ -60,4 +59,5 @@
     <fullyQualifiedTypeName name="com.wissen.oops.TwoInterfaceSameDefaultMethod"/>
     <fullyQualifiedTypeName name="java.lang.FunctionalInterface"/>
     <fullyQualifiedTypeName name="java.lang.Override"/>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
 </qualifiedTypeNameHistroy>
