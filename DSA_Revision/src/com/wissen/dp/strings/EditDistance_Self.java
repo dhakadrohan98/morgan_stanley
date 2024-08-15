@@ -2,8 +2,10 @@ package com.wissen.dp.strings;
 
 import java.util.Arrays;
 
-public class EditDistance_Self {
+class EditDistance_Self {
 	
+	//TC: O(m*n)
+    //SC: O(m+n) stack space + O(m*n) memoization dp space 
 	public int minDistance(String s1, String s2) {
         int n = s1.length();
         int m = s2.length();
@@ -44,7 +46,7 @@ public class EditDistance_Self {
     }
     
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		System.out.println("hi");
 
 	}
 
