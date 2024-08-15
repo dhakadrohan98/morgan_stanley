@@ -6,7 +6,7 @@ public class StringCompression {
 
 	//TC: O(n)
 	//SC: O(1)
-	public int compress(char[] chars) {
+	public static int compress(char[] chars) {
 		int n = chars.length;
 		int i = 0;
 		for (int j = 1, count = 1; j <= n; j++, count++) {
