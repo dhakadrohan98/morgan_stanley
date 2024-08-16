@@ -2,40 +2,40 @@ package com.wissen.greedy;
 
 public class CountNumberofTeams_Greedy_Approach {
 
-	// TC: O(2n^2)
+	// TC: O(n^2)
 	// SC: O(1)
 	public static int numTeams(int[] nums) {
 		int n = nums.length;
-		int teams = 0;
+		int ans = 0;
 
 		for (int j = 1; j < n - 1; j++) {
-			int smallerLeft = 0;
-			int smallerRight = 0;
-			int largerLeft = 0;
-			int largerRight = 0;
+			int countLeftSmaller = 0;
+			int countRightGreater = 0;
+			int countLeftGreater = 0;
+			int countRightSmaller = 0;
 
-			// Store smaller & larger elements count for left portion w.r.t. i
+			// strictly increasing sequence case
 			for (int i = 0; i < j; i++) {
 				if (nums[i] < nums[j]) {
-					smallerLeft++;
+					countLeftSmaller++;
 				} else if (nums[i] > nums[j]) {
-					largerLeft++;
+					countLeftGreater++;
 				}
 			}
 
-			// Store smaller & larger elements count for right portion w.r.t. i
-			for (int k = j + 1; k < n; k++) {
-				if (nums[j] < nums[k]) {
-					largerRight++;
-				} else if (nums[j] > nums[k]) {
-					smallerRight++;
+			// strictly decreasing sequence case
+			for (int i = j + 1; i < n; i++) {
+				if (nums[j] > nums[i]) {
+					countRightSmaller++;
+				} else if (nums[j] < nums[i]) {
+					countRightGreater++;
 				}
 			}
 
-			teams += (smallerLeft * largerRight) + (largerLeft * smallerRight);
+			ans += (countLeftSmaller * countRightGreater) + (countLeftGreater * countRightSmaller);
 		}
 
-		return teams;
+		return ans;
 	}
 
 	public static void main(String[] args) {
