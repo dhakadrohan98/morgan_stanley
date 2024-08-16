@@ -2,7 +2,7 @@ package com.wissen.dp.strings;
 
 import java.util.Arrays;
 
-class EditDistance_Self {
+public class EditDistance_Self {
 	
 	//TC: O(m*n)
     //SC: O(m+n) stack space + O(m*n) memoization dp space 

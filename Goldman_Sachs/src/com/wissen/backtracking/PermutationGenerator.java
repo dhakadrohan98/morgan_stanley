@@ -1,8 +1,10 @@
 package com.wissen.backtracking;
 
 import java.util.*;
+
 public class PermutationGenerator {
-	
+	 //TC: O(n! * n)
+    //SC: O(n) visited array + O(n) stack space + O()
 	public List<List<Integer>> permute(int[] nums) {
         int n = nums.length;
         List<List<Integer>> ans = new ArrayList<>();
