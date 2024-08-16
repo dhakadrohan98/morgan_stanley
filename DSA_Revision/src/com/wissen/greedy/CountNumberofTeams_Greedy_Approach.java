@@ -32,8 +32,6 @@ public class CountNumberofTeams_Greedy_Approach {
 				}
 			}
 
-			System.out.println("smallerleft " + smallerLeft);
-
 			teams += (smallerLeft * largerRight) + (largerLeft * smallerRight);
 		}
 
