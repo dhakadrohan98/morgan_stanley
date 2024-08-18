@@ -2,6 +2,10 @@ package com.wissen.r1.spaceship.oops;
 
 class Parent1 {
 	
+//	Parent1() {
+//		System.out.println("Parent class default constructor ");
+//	}
+	
 	Parent1(String s) {
 		System.out.println("Parent Class Param  " + s);
 	}
@@ -25,5 +29,5 @@ public class Child11 extends Parent1 {
 
 }
 
-nums1 = {1,2,0,3,0,4,0,7};
-nums2 = {4,6,7,0,9,0,0,9,9,10,11};
+//nums1 = {1,2,0,3,0,4,0,7};
+//nums2 = {4,6,7,0,9,0,0,9,9,10,11};
