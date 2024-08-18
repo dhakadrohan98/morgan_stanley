@@ -5,7 +5,7 @@ import java.util.*;
 public class PascalTriangleII {
 
 	// TC: O(N^2)
-	// SC: less than O(N^2)
+	// SC: O(N) for nth row
 	public List<Integer> getRow(int rowIndex) {
 		List<Integer> prev = new ArrayList<>();
 		// go from 0 till rowIndex(3) -> 0,1,2,3
