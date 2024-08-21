@@ -26,7 +26,6 @@ public class DailyTemparature {
             int curr = nums[i];
             if(!st.isEmpty() && st.peek().num > curr) {
                 Pair pair = st.peek();
-                int elem = pair.num;
                 int indx = pair.i;
                 //store next days difference at ith index in res array
                 res[i] = indx -  i;
