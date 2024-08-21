@@ -1,6 +1,8 @@
 package com.wissen.linkedlist;
 
 public class DeleteNodeInLinkedListWithoutGievnHead {
+	//TC: O(n)
+	//SC: O(1)
 	public void deleteNode(ListNode node) {
         ListNode prev = null;
         
