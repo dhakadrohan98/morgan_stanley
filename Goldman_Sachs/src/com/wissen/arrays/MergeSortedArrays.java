@@ -1,10 +1,13 @@
 package com.wissen.arrays;
 
 public class MergeSortedArrays {
-	I/*ntuition: Place the largest element at last indexes from both of the array & move the pointer
-	of the arr having greater value(arr1) than element of second array(arr2) & K will always move one 
-	step back. If there were some remaining elements in arr2 then copy the all elements of arr2 into arr1 from 
-	last index (j into k).*/
+	/*
+	 * Intuition: Place the largest element at last indexes from both of the array &
+	 * move the pointer of the arr having greater value(arr1) than element of second
+	 * array(arr2) & K will always move one step back. If there were some remaining
+	 * elements in arr2 then copy the all elements of arr2 into arr1 from last index
+	 * (j into k).
+	 */
 	//TC: O(m+n)
 	//SC: O(1)
 	public static void merge(int[] nums1, int m, int[] nums2, int n) {
