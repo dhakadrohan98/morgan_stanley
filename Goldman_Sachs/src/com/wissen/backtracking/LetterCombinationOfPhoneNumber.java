@@ -32,7 +32,7 @@ public class LetterCombinationOfPhoneNumber {
             return;
         }
         
-        //store current digits string into curr to iterate over through 
+        //store current digit's string into curr to iterate over through 
         String curr = hmap.get(digits.charAt(i));
         //abc
         //def
