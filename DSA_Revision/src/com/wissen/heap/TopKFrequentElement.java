@@ -14,7 +14,7 @@ class Pair {
 
 public class TopKFrequentElement {
 	
-	//TC: O(n + n*logn) //insert delete -> logn in min heap
+	//TC: O(n + n*logn) //insert & delete -> logn in min heap
     //SC: O(n + k)
     public static int[] topKFrequent(int[] nums, int k) {
        Map<Integer, Integer> hmap = new HashMap<>();
