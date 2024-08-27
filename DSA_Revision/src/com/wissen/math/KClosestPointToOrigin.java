@@ -16,7 +16,7 @@ class Pair {
 
 public class KClosestPointToOrigin {
 	//TC: O(n * (k + logk) )
-	//SC: O(k) max heap size + O(k) result array
+	//SC: O(k) + O(k) result array
 	public static int[][] kClosest(int[][] arr, int k) {
 //		Build the Max heap because we want greatest eclidean distance at the top, So we can compare 
 //		with curr elements ed & if curr ed is less than top element's ed then 
