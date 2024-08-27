@@ -11,7 +11,8 @@ class CustomPair {
 		this.distance = distance;
 	}
 }
-
+//TC: O(E log V) // Where E is the number of edges and V is the number of vertices.
+//SC: O(V)
 public class Dijkstra_ShortestPath_Undirected_Heap {
 	
 	public static int[] dijkstra(int V, ArrayList<ArrayList<ArrayList<Integer>>> adj, int src) {
