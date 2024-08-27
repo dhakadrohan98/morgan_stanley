@@ -45,6 +45,7 @@ public class ZeroEvenOdd {
 
 	public void even(IntConsumer printNumber) throws InterruptedException {
 		int numEven = n / 2;
+		//how many times even will be printed
 		while (numEven > 0) {
 			evenSemaphore.acquire();
 			printNumber.accept(++lastPrinted);
@@ -55,6 +56,7 @@ public class ZeroEvenOdd {
 
 	public void odd(IntConsumer printNumber) throws InterruptedException {
 		int numOdd = n - n / 2;
+		//how many times odd will be printed
 		while (numOdd > 0) {
 			oddSemaphore.acquire();
 			printNumber.accept(++lastPrinted);
