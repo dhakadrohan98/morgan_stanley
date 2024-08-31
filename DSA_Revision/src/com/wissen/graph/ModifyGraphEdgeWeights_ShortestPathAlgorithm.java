@@ -31,7 +31,7 @@ public class ModifyGraphEdgeWeights_ShortestPathAlgorithm {
 		// PQ< new long[]{distance, node} >
 		PriorityQueue<long[]> pq = new PriorityQueue<>((a, b) -> Long.compare(a[0], b[0])); //The priority queue stores at most (V) elements. O(V)
 		long[] result = new long[n]; // shortest path distance from src to each node
-		// Q.1) Why boolean array is taken?
+		// keep track of visited node
 		boolean[] visited = new boolean[n];
 		Arrays.fill(result, Long.MAX_VALUE); // Initialize distances as infinity from src to each node
 		result[src] = 0; // Distance from src to src is 0
