@@ -48,7 +48,7 @@ public class WalkingRobotSimulation {
 			for(int step = 0; step < command; step++) {
 				int nextX = currPos[0] + direction[0];
 				int nextY = currPos[1] + direction[1];
-				//at next x & next y there is an obtacle, break the loop here & go to the next command
+				//at next x & next y there is an obstacle, break the loop here & go to the next command
 				if(hmap.containsKey(nextX) && hmap.get(nextX).contains(nextY)) {
 					break;
 				}
