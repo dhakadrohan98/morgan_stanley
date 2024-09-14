@@ -13,13 +13,25 @@ public class BitManipulationLearning {
 		
 		//XOR operator
 		System.out.println(21 ^ 23);
-		//xor of any number with 0 itself
+		//Xor of any number with 0 itself
 		System.out.println(8 ^ 0);
-		
-		
+	
 		//One’s complement operator (Negation operator)
 		// ~x = -(x+1)
 		System.out.println(~5);
+		
+		//left shift operator
+		System.out.println(23<<1); //23 * (2^1)
+		System.out.println(23<<2); //23 * (2^2)
+		System.out.println(23<<3); //23 * (2^3)
+		
+		//right shift operator
+		System.out.println(23>>1); // 23 / (2^1)
+		System.out.println(23>>2); // 23 / (2^2)
+		System.out.println(23>>3); // 23 / (2^3)
+		
+		
+		
 
 	}
 
