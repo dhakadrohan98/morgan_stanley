@@ -19,6 +19,7 @@ public class BitManipulationLearning {
 		//One’s complement operator (Negation operator)
 		// ~x = -(x+1)
 		System.out.println(~5);
+		System.out.println(~(-6));
 		
 		//left shift operator
 		System.out.println(23<<1); //23 * (2^1)
