@@ -2,6 +2,8 @@ package com.wissen.bitmanipulation;
 
 public class ConvertDecimalToBinary {
 
+	//TC: O(logn) base to the 2
+	//SC: O(logn) base to the 2
 	public static String convertBinaryToDecimal(int num) {
 		
 		StringBuilder sb = new StringBuilder();
