@@ -1,5 +1,6 @@
 package com.wissen.comparable.comparator;
 
+//Comparable affects the original class
 public class Student implements Comparable<Student> {
 	
 	int id;

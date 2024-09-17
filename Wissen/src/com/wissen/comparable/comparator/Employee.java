@@ -2,6 +2,8 @@ package com.wissen.comparable.comparator;
 
 import java.util.*;
 
+
+//Comparator doesn't affect the original class
 //Q. Sort the employee List based on their names if names are same then sort the basis on their salaries.
 class EmployeeComparator implements Comparator<Employee> {
 	
