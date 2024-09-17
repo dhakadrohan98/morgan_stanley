@@ -1,6 +1,7 @@
 package com.wissen.Iterator;
 
 import java.util.*;
+import java.util.concurrent.*;
 
 public class IteratorExample1 {
 
@@ -22,6 +23,7 @@ public class IteratorExample1 {
 		
 		while(itr.hasNext()) {
 			System.out.println(itr.next());
+			//This method can be calledonly once per call to next. 
 			itr.remove();
 			System.out.println("size: " + list.size());
 		}
