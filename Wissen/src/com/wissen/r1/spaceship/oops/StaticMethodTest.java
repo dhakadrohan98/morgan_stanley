@@ -1,7 +1,6 @@
 package com.wissen.r1.spaceship.oops;
 
 class Parent2 {
-    
     static void staticMethod() {
         System.out.println("Static method in Parent");
     }
