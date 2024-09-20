@@ -12,6 +12,7 @@
 		<item key="isRegEx" value="false"/>
 		<item key="selection" value="k"/>
 		<list key="findhistory">
+			<item value="package com.wissen.r1.spaceship.oops;"/>
 			<item value="k"/>
 			<item value="construct"/>
 			<item value="hmap"/>
@@ -26,7 +27,6 @@
 			<item value="hmap.put("/>
 			<item value="data"/>
 			<item value="val"/>
-			<item value="Employee"/>
 		</list>
 		<list key="replacehistory">
 			<item value="belowTen"/>

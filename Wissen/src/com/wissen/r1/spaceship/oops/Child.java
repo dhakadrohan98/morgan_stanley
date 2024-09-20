@@ -22,9 +22,8 @@ public class Child extends Parent {
 	Child(String s) {
 		System.out.println("Child Class param " + s);
 	}
-
+	
 	public static void main(String[] args) {
 		Child obj = new Child();
 	}
-
 }
