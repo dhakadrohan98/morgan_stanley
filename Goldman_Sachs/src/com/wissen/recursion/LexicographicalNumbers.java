@@ -1,7 +1,7 @@
 package com.wissen.recursion;
 
 import java.util.*;
-
+	
 public class LexicographicalNumbers {
 
 	// TC: O(n) we will iterate each & every number at most once
