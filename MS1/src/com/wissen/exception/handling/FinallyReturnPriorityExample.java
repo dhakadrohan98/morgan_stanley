@@ -11,10 +11,12 @@ public class FinallyReturnPriorityExample {
 	public static int getNo() {
 		try {
 			int i = 90 / 9;
+			System.out.println(i);
 			return i;
 		} catch (NullPointerException e) {
 			return 92;
 		} finally {
+			System.out.println("inside finally block");
 			return 99; // o/p: 99
 		}
 	}
