@@ -1,5 +1,6 @@
 package com.wisssen.oops;
 
+//Constructor chaining example
 class Parent {
 
 	Parent() {
