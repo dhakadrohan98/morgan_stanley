@@ -5,6 +5,7 @@ import java.io.FileOutputStream;
 public class TryWithSingleResource {
 
 	public static void main(String[] args) {
+		
 		try {
 			// Creating an object of FileOutputStream to write stream or raw data
 			// Adding resource
