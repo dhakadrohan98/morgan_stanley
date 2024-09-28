@@ -16,6 +16,7 @@ public class RunnableInterfaceJoinMethodExample implements Runnable {
 	}
 	
 	public static void main(String[] args) throws InterruptedException {
+		//object(runn) is shared among all three threads (t1, t2, t3)
 		RunnableInterfaceJoinMethodExample runn = new RunnableInterfaceJoinMethodExample();
 		Thread th1 = new Thread(runn, "t1");
 		Thread th2 = new Thread(runn, "t2");

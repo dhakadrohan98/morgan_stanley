@@ -1,5 +1,8 @@
 package com.wissen.multithreading;
 
+import java.util.ArrayList;
+import java.util.Hashtable;
+
 public class ThreadClassExample extends Thread {
 	
 	@Override
@@ -16,8 +19,14 @@ public class ThreadClassExample extends Thread {
 	}
 	
 	public static void main(String[] args) {
+//		Parent class
+//		Object object = new Object();
+		
+		
 		ThreadClassExample th1 = new ThreadClassExample();
 		ThreadClassExample th2 = new ThreadClassExample();
+		th1.setName("Rohan");
+		th2.setName("Sanjeet");
 		
 		th1.start();
 		try {
