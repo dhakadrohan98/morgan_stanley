@@ -24,7 +24,7 @@ public class ThreadSafeSingleton {
 			@Override
 			public void run() {
 				ThreadSafeSingleton obj = ThreadSafeSingleton.getInstance();
-				System.out.println("instance from th1 " + obj);
+				System.out.println("instance from th1 " + obj.hashCode());
 			}
 		});
 
@@ -33,7 +33,7 @@ public class ThreadSafeSingleton {
 			@Override
 			public void run() {
 				ThreadSafeSingleton obj = ThreadSafeSingleton.getInstance();
-				System.out.println("instance from th2 " + obj);
+				System.out.println("instance from th2 " + obj.hashCode());
 			}
 		});
 		
