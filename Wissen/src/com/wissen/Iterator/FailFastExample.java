@@ -13,14 +13,16 @@ public class FailFastExample {
         Iterator<String> iterator = cityCode.keySet().iterator();
         while (iterator.hasNext()) {
             System.out.println(cityCode.get(iterator.next()));
-            //Adding new key into the map
-            // Structural modification of the map
-//            cityCode.put("Istanbul", "Turkey");
-            //Updating existing key
+			/*
+			 * Adding new key into the map is structural modification of the map, then Concurrent
+			 * ModificationException will be thrown.
+			 * Update existing key of map is not structural modification of the map, Then CME will not 
+			 * occur.
+			 * cityCode.put("Istanbul", "Turkey"); Updating existing key
+			 */
             cityCode.put("New York", "Canada");
         }
         
-        StringBuilder
     }
 
 }
