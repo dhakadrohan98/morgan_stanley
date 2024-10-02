@@ -2,7 +2,7 @@ package com.wissen.functional.interfacee;
 
 @FunctionalInterface
 interface Functional {
-	public double calculatePi(double radius);
+	public double calculateAreaOfCircle(double radius);
 }
 
 public class FunctionalInterfaceImpl {
@@ -13,7 +13,7 @@ public class FunctionalInterfaceImpl {
 			return 3.1413*r*r;
 		};
 		
-		double result = functional.calculatePi(2.3);
+		double result = functional.calculateAreaOfCircle(2.3);
 		System.out.println(result);
 
 	}
