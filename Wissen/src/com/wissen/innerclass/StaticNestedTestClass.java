@@ -9,8 +9,8 @@ class OuterClass1 {
 	
 	static class InnerClass {
 		void print() {
-			System.out.println(a);
-			System.out.println(b);
+			System.out.println("a " + a);
+			System.out.println("b " + b);
 		}
 	}
 }

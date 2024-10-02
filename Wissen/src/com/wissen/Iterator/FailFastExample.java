@@ -13,9 +13,14 @@ public class FailFastExample {
         Iterator<String> iterator = cityCode.keySet().iterator();
         while (iterator.hasNext()) {
             System.out.println(cityCode.get(iterator.next()));
+            //Adding new key into the map
             // Structural modification of the map
-            cityCode.put("Istanbul", "Turkey");
+//            cityCode.put("Istanbul", "Turkey");
+            //Updating existing key
+            cityCode.put("New York", "Canada");
         }
+        
+        StringBuilder
     }
 
 }
