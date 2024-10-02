@@ -1,4 +1,4 @@
-package com.wissen.r1.spaceship.oops;
+package com.wissen.r1.spaceship.OOPS;
 
 class Parent1 {
 	

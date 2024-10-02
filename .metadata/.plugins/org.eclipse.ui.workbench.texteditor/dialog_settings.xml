@@ -6,12 +6,17 @@
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item key="wrap" value="false"/>
-		<item key="casesensitive" value="true"/>
+		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="k"/>
+		<item key="selection" value="toString"/>
 		<list key="findhistory">
+			<item value="toString"/>
+			<item value="toString("/>
+			<item value="toString()"/>
+			<item value="build("/>
+			<item value="build"/>
 			<item value="package com.wissen.r1.spaceship.oops;"/>
 			<item value="k"/>
 			<item value="construct"/>
@@ -22,11 +27,6 @@
 			<item value="res"/>
 			<item value="key"/>
 			<item value="outer"/>
-			<item value="isOuter"/>
-			<item value="list"/>
-			<item value="hmap.put("/>
-			<item value="data"/>
-			<item value="val"/>
 		</list>
 		<list key="replacehistory">
 			<item value="belowTen"/>

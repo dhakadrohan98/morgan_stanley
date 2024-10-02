@@ -2,11 +2,11 @@ package com.wisssen.oops;
 
 public class MethodOverloadingExample {
 
-	public static void print(int a, int b) {
+	static void print(int a, int b) {
 		System.out.println(a +" " + b);
 	}
 	
-	public static void print(long a, long b) {
+	public static void print(double a, double b) {
 		System.out.println(a +" " + b);
 	}
 	
