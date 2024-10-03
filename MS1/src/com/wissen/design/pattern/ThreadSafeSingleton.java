@@ -1,7 +1,7 @@
 package com.wissen.design.pattern;
 
 public class ThreadSafeSingleton {
-	private static ThreadSafeSingleton instance = null;
+	private static ThreadSafeSingleton instance;
 
 	private ThreadSafeSingleton() {
 

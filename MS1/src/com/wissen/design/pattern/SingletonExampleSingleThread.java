@@ -1,7 +1,7 @@
 package com.wissen.design.pattern;
 
 class Single {
-	private static Single obj = null;
+	private static Single obj;
 	
 	private Single() {}
 	
