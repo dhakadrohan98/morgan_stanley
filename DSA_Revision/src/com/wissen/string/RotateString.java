@@ -1,5 +1,7 @@
 package com.wissen.string;
 
+import java.util.Arrays;
+
 public class RotateString {
 	
 	//TC: O(n)
@@ -19,7 +21,7 @@ public class RotateString {
             if(goal.equals(rotate)) {
                 return true;
             }
-        }
+            Arrays.sort();        }
         return false;
     }
     
