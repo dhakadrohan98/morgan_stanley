@@ -4,6 +4,8 @@ public class FinallyBlockReturn {
 
 	public static int method1() {
 		try {
+			System.out.println("Try block is executed but return statement will not be "
+					+ "executed of try block due to the presence of finally block");
 			return 1;
 		} catch (Exception e) {
 			return 2;

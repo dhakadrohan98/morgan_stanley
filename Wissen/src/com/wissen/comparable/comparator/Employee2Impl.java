@@ -20,7 +20,7 @@ class Employee2 implements Comparable<Employee2> {
 		if(this.name.equalsIgnoreCase(obj.name)) {
 			return this.id - obj.id;
 		}
-		return this.name.compareTo(obj.name);
+		return this.name.compareToIgnoreCase(obj.name);
 	}
 
 	@Override
