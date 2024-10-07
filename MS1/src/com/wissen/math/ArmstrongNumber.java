@@ -5,15 +5,15 @@ public class ArmstrongNumber {
 	//TC: O((log10n) ^ 2)
 	//SC: O(1)
 	public static boolean isArmstrong(int num) {
-		int n = num;
+		int tempNum = num;
 		//find the no. of digits
-		int digits = (int)Math.log10(n) + 1;
+		int digits = (int)Math.log10(tempNum) + 1;
 		int armstrong = 0;
 		
-		while(n != 0) {
-			int rem = n % 10;
+		while(tempNum != 0) {
+			int rem = tempNum % 10;
 			armstrong += (int) Math.pow(rem, digits);
-			n /= 10;
+			tempNum /= 10;
 		}
 		
 		if(num == armstrong) {

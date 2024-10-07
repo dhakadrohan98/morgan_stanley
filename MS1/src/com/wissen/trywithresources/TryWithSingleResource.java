@@ -10,7 +10,8 @@ public class TryWithSingleResource {
 			// Creating an object of FileOutputStream to write stream or raw data
 			// Adding resource
 			FileOutputStream fos = new FileOutputStream("outputfile.text");
-			String text = "Hello World. This is my java program";
+			String text = "Hello World. This is my java program to demonstrate try with "
+					+ "resources feature";
 			
 			byte[] bytes = text.getBytes();
 			

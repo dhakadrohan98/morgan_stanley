@@ -10,6 +10,8 @@ public class FailFastExample {
         cityCode.put("Moscow", "Russia");
         cityCode.put("New York", "USA");
 
+        System.out.println("Before iterations: " + cityCode);
+        
         Iterator<String> iterator = cityCode.keySet().iterator();
         while (iterator.hasNext()) {
             System.out.println(cityCode.get(iterator.next()));
@@ -20,8 +22,9 @@ public class FailFastExample {
 			 * occur.
 			 * cityCode.put("Istanbul", "Turkey"); Updating existing key
 			 */
-            cityCode.put("New York", "Canada");
+            cityCode.put("New Yor", "Canada");
         }
+        System.out.println(cityCode);
         
     }
 

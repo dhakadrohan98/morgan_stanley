@@ -2,7 +2,7 @@ package com.wissen.hashcode.equals.method;
 
 import java.util.Objects;
 
-public class Student {
+public class Student<> {
 	int id;
 	String name;
 	int age;
@@ -31,6 +31,8 @@ public class Student {
 		if(this.id == student.id) {
 			return this.name.equalsIgnoreCase(student.name);
 		}
-		return false;
+		return this.id == student.id;
 	}
+	
+	
 }
