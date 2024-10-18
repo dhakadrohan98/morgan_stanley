@@ -16,8 +16,11 @@ public class StudentClassImpl {
 		
 		List<String> subjects = s1.getSubjects();
 		subjects.add(1, "Astro physics");
+		System.out.println("--------------------------------");
+		
 		System.out.println("Modified subject list from client program");
 		System.out.println(subjects);
+		System.out.println("--------------------------------");
 		
 		System.out.println("Subject list from Immutable class");
 		System.out.println(s1.getSubjects());
