@@ -9,7 +9,7 @@ class Parent {
 	}
 
 	Parent(String s) {
-		System.out.println("Parent Class Param  " + s);
+		System.out.println("Parent Class Param Constructor " + s);
 	}
 }
 
