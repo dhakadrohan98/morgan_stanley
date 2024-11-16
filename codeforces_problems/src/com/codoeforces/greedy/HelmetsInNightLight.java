@@ -11,10 +11,10 @@ public class HelmetsInNightLight {
 	
 	static class Pair {
 
-		int cost;
-		int maxResident;
+		long cost;
+		long maxResident;
 
-		Pair(int cost, int maxResident) {
+		Pair(long cost, long maxResident) {
 			this.cost = cost;
 			this.maxResident = maxResident;
 		}
@@ -22,10 +22,10 @@ public class HelmetsInNightLight {
 
 	static class PairSortingComparator implements Comparator<Pair> {
 
-		// sort the element on the basis of cost, if costs are equal then compare on the basis of maxResident
+		// sort the element on the basis of cost only.
 		@Override
 		public int compare(Pair p1, Pair p2) {
-			return p1.cost - p2.cost;
+			return Long.compare(p1.cost, p2.cost);
 		}
 	}
 
@@ -36,12 +36,12 @@ public class HelmetsInNightLight {
 		long [] result = new long[t];
 
 		//No. of test cases
-		for (int i = 0; i < t; i++) {
+		for (int i = 0; i < t; i++) {	
 			int n = sc.nextInt(); // no. of resident
 			int p = sc.nextInt(); // cost of pak chanek to share the announcement
 			
-			int[] a = new int[n];
-			int[] b = new int[n];
+			long[] a = new long[n];
+			long[] b = new long[n];
 //			n integers a1,a2,a3,…,an (1 ≤ ai ≤ 10^5) — the maximum number of residents that each 
 //			resident can share the announcement to.
 			for (int j = 0; j < n; j++) {
@@ -70,22 +70,22 @@ public class HelmetsInNightLight {
 //			}
 			
 			int residents = 1;
-			long minimumCost = p;
+			long minimumCost = Long.valueOf(p);
 			
 			for(int k = 0; k < n; k++) {
-				int cost = allAdjacentResidentCost[k].cost;
-				int maxResident = allAdjacentResidentCost[k].maxResident;
+				long cost = allAdjacentResidentCost[k].cost;
+				long maxResident = allAdjacentResidentCost[k].maxResident;
 				
-				//if pak chanek cost is lesser than current bi cost
+				//if pak chanek cost is lesser than current ai -> bi cost
 				if(p < cost) {
 					break;
 				}
 				
-				minimumCost += (cost * (Math.min(maxResident, n-residents)));
+				minimumCost += Long.valueOf((cost * (Math.min(maxResident, n-residents))));
 				residents += Math.min(maxResident, n-residents);
 			}
-			minimumCost += (p *(n - residents));
-			result[i] = minimumCost;
+			minimumCost += Long.valueOf((p *(n - residents)));
+			result[i] = Long.valueOf(minimumCost);
 		}
 
 		//print the result
