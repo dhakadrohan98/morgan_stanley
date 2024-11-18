@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="java.io.Externalizable"/>
-    <fullyQualifiedTypeName name="java.io.FileOutputStream"/>
-    <fullyQualifiedTypeName name="java.io.ObjectOutputStream"/>
     <fullyQualifiedTypeName name="java.io.FileInputStream"/>
     <fullyQualifiedTypeName name="java.io.ObjectInputStream"/>
     <fullyQualifiedTypeName name="java.io.IOException"/>
@@ -33,9 +30,7 @@
     <fullyQualifiedTypeName name="java.util.LinkedHashMap"/>
     <fullyQualifiedTypeName name="java.util.stream.Collector"/>
     <fullyQualifiedTypeName name="java.util.stream.Collectors"/>
-    <fullyQualifiedTypeName name="java.lang.Integer"/>
     <fullyQualifiedTypeName name="java.util.LinkedList"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="java.util.Map"/>
     <fullyQualifiedTypeName name="java.util.HashMap"/>
     <fullyQualifiedTypeName name="java.util.concurrent.Executors"/>
@@ -45,7 +40,6 @@
     <fullyQualifiedTypeName name="java.util.concurrent.Future"/>
     <fullyQualifiedTypeName name="java.lang.InterruptedException"/>
     <fullyQualifiedTypeName name="java.util.concurrent.ExecutionException"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="java.util.Collections"/>
     <fullyQualifiedTypeName name="java.util.Map.Entry"/>
     <fullyQualifiedTypeName name="java.util.Queue"/>
@@ -53,11 +47,17 @@
     <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
     <fullyQualifiedTypeName name="com.mysql.cj.jdbc.ClientPreparedStatement"/>
     <fullyQualifiedTypeName name="codoeforces.greedy.pair"/>
-    <fullyQualifiedTypeName name="java.util.Comparator"/>
     <fullyQualifiedTypeName name="codoeforces.greedy.Pair"/>
     <fullyQualifiedTypeName name="codoeforces.greedy.CostComaparator"/>
     <fullyQualifiedTypeName name="java.util.Deque"/>
     <fullyQualifiedTypeName name="java.util.ArrayDeque"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="java.util.Comparator"/>
     <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="com.codoeforces.greedy.Monsters.SortPair"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="java.lang.Integer"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="com.codoeforces.greedy.Monsters.Pair"/>
 </qualifiedTypeNameHistroy>
