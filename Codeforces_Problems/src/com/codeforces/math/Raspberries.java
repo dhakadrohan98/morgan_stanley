@@ -2,6 +2,9 @@ package com.codeforces.math;
 
 import java.util.Scanner;
 
+//TC: O(t*n)
+//SC: O(1)
+
 public class Raspberries {
 
 	private static void solve(Scanner sc) {
@@ -14,6 +17,7 @@ public class Raspberries {
 		int ans = (int) 10e9;
 		for(int i = 0; i < n; i++) {
 			a = sc.nextInt();
+			//minimum no. of operation make ai divisble by k.
 			int op = (k - (a%k)) % k;
 			ans = Math.min(ans, op);
 			if(a % 2 == 0) {
@@ -40,7 +44,7 @@ public class Raspberries {
 
 }
 
-//Test case
+//Edge Test cases
 
 //1
 //2 4
@@ -48,4 +52,7 @@ public class Raspberries {
 //op: 0
 
 //1
+//2 4
+//5 9
+//op: 2
 
