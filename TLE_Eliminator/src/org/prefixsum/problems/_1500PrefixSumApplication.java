@@ -2,6 +2,8 @@ package org.prefixsum.problems;
 
 import java.util.Scanner;
 
+//TC: O(n+q)
+//SC: O(2*n)
 public class _1500PrefixSumApplication {
 
 	public static void main(String[] args) {
