@@ -5,7 +5,7 @@ import java.util.Map;
 
 public class ContiguousArray {
 	
-	//TC: O(n * logn)
+	//TC: O(n * logn(hmap worst case))
     //SC: O(1)
     public int findMaxLength(int[] nums) {
         int n = nums.length;
