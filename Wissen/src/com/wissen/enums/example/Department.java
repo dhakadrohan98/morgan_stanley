@@ -5,7 +5,8 @@ public enum Department {
 	TECHNOLOGY("tech"),
 	FINANCE("finan"),
 	COMPILANCE("compliance"),
-	HR ("hR");
+	HR ("hR"),
+	COMPANY("Wissen technology");
 	
 	private String dept;
 
