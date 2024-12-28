@@ -17,6 +17,8 @@ public class BitManipulationFunction {
 		System.out.println(Long.numberOfTrailingZeros(num2));
 		boolean b = true;
 		System.out.println(Byte.SIZE + " bits"); 
+		
+		System.out.println("1<<3 is equal to binary number: 1000 | int: " + (1<<3));
 
 	}
 
