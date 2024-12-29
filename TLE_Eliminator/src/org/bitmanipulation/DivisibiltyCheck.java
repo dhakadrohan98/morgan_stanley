@@ -8,8 +8,7 @@ public class DivisibiltyCheck {
 		//n -> 1 to 6
 		for(int i = 0; i < n; i++) {
 			for(int div = 1; div <= n; div++) {
-				int divisor = 1 << div;
-				divisor -= 1;
+				int divisor = (1 << div) -1;
 				if((arr[i] & divisor) == 0) {
 					System.out.println(arr[i] +" is divisible by " + (1 << div));
 				}
