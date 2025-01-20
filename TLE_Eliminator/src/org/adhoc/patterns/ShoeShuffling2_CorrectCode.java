@@ -2,6 +2,9 @@ package org.adhoc.patterns;
 
 import java.util.Arrays;
 import java.util.Scanner;
+
+//TC: O(t*n)
+//SC: O(n)
 public class ShoeShuffling2_CorrectCode {
 
     private static void solve(Scanner sc) {
@@ -12,9 +15,7 @@ public class ShoeShuffling2_CorrectCode {
         }
 
         int[] ans = new int[n];
-        Arrays.fill(ans, -1);
         
-        //TC: O(n)
         for (int i = 0; i < n; i++) {
             long temp = arr[i];
             int size = 1;
