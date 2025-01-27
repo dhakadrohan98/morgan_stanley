@@ -1,4 +1,4 @@
-package org.recursion;
+package org.backtracking;
 
 //Hard question on backtracking
 public class SudokuSolver {
@@ -39,9 +39,8 @@ public class SudokuSolver {
         }
         // cols are exhausted
         if (c == 9) {
-            // change the row & go to column 0 because all columns are traversed for the
-            // current row
-            // always traverse left to right
+            // change the row & go to column 0 because all columns are traversed for the current row 
+        	//always traverse from left to right
             return helper(board, r + 1, 0);
         }
         // if current cell is not empty then move ahead to the next cell
@@ -65,10 +64,8 @@ public class SudokuSolver {
             // make current modified grid to its original value i.e. (.) empty cell
             board[r][c] = '.';
         }
-        // if it is retuned for first row & first col then this sudoku can not be
-        // solved. In question
-        // it is given that input board has only one solution, this case will never
-        // occure
+        // if it is retuned for first row & first col then this sudoku can not be solved. 
+        //In question, it is given that input board has only one solution, this case will never occur
         return false;
     }
 
