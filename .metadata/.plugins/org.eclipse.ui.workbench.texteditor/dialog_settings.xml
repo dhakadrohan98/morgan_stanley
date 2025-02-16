@@ -10,8 +10,9 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="toString"/>
+		<item key="selection" value="E"/>
 		<list key="findhistory">
+			<item value="n"/>
 			<item value="toString"/>
 			<item value="toString("/>
 			<item value="toString()"/>
@@ -26,9 +27,9 @@
 			<item value="System.out.println"/>
 			<item value="res"/>
 			<item value="key"/>
-			<item value="outer"/>
 		</list>
 		<list key="replacehistory">
+			<item value="E"/>
 			<item value="belowTen"/>
 			<item value="hmap"/>
 			<item value="Employee1"/>
