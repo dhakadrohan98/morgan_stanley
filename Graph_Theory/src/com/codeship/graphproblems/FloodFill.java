@@ -1,5 +1,7 @@
 package com.codeship.graphproblems;
 
+//TC: O(n*m)
+//SC: O(n*m) visited array + O(n) recursion stack space
 public class FloodFill {
 	
 	static int[] dx = {-1, 0, 1, 0};
