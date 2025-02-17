@@ -1,6 +1,9 @@
 package com.codeship.representation;
 
 import java.util.*;
+
+//TC: O(v) + O(2*E) for undirected graph (summation of degree of a graph)
+//SC: O(v) visited array + O(v) recursion stack space in case of skew graph + O(v) to store ans
 public class DFSOfGraph {
 	
 	// Function to return a list containing the DFS traversal of the graph.
