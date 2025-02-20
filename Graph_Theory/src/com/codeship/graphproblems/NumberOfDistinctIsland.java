@@ -1,6 +1,9 @@
 package com.codeship.graphproblems;
 
 import java.util.*;
+
+//TC: O(n*m) + O(4*m*n) dfs traversal
+//SC: O(n*m) visited + O(n*m) to store into set
 public class NumberOfDistinctIsland {
 	private static boolean isValid(int row, int col, int[][] mat) {
         return row >= 0 && row < mat.length && col >= 0 && col < mat[0].length;
@@ -32,6 +35,7 @@ public class NumberOfDistinctIsland {
         boolean[][] vis = new boolean[n][m];
         //Set will contain unique shapes only
         Set<List<String>> set = new HashSet<>();
+        //O(m*n) + O(4*m*n)
         for(int i = 0; i < n; i++){
             for(int j = 0; j < m; j++) {
                 if(!vis[i][j] && grid[i][j] == 1) {
