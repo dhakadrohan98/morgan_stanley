@@ -1,0 +1,10 @@
+package com.codeship.graphproblems;
+
+public class CourseScheduleI {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

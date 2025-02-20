@@ -30,8 +30,8 @@ public class Kahns_Algo_TopologicalSort_BFS {
         while(!queue.isEmpty()) {
             //remove the front node
             int node = queue.poll();
-            //Now current node is in your topo sort
-            //So please disconnect it from its adjacent nodes
+            //node is in your topo sort
+            //So please disconnect it from its adjacent nodes and remove it from the indegree
             topo.add(node);
             for(int itr : adj.get(node)) {
                 indegree[itr]--;
