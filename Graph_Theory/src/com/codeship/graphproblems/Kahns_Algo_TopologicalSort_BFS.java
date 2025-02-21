@@ -31,12 +31,13 @@ public class Kahns_Algo_TopologicalSort_BFS {
             //remove the front node
             int node = queue.poll();
             //node is in your topo sort
-            //So please disconnect it from its adjacent nodes and remove it from the indegree
+            //So please disconnect it from adjacent nodes and remove it from the indegree
+            //Whatever node will come from queue into 
             topo.add(node);
             for(int itr : adj.get(node)) {
                 indegree[itr]--;
                 if(indegree[itr] == 0) {
-                    queue.add(itr);
+                    queue.offer(itr);
                 }
             }
         }
