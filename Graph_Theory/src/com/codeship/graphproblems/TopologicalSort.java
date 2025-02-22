@@ -15,7 +15,7 @@ public class TopologicalSort {
 		                dfs(itr, adj, vis, st);
 		            }
 		        }
-		        //while backtrack from a particular path add current node into stack
+		        //while backtrack from a particular path, add current node into stack
 		        st.push(node);
 		    }
 		    
