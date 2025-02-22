@@ -12,7 +12,7 @@ public class PrerequisiteTasks {
     
     public boolean isPossible(int V,int M, int[][] prerequisites)
     {
-        //making an adjacency list from prerequisites array
+        //make an adjacency list from prerequisites array
         List<List<Integer>> adj = new ArrayList<>();
         //O(V)
         for(int i = 0; i < V; i++) {

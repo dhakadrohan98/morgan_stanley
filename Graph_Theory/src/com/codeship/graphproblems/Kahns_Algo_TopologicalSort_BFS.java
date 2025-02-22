@@ -32,7 +32,8 @@ public class Kahns_Algo_TopologicalSort_BFS {
             int node = queue.poll();
             //node is in your topo sort
             //So please disconnect it from adjacent nodes and remove it from the indegree
-            //Whatever node will come from queue into 
+            //if any node will come from the queue
+            //it means it was safe node due to indegree[node] = 0
             topo.add(node);
             for(int itr : adj.get(node)) {
                 indegree[itr]--;
@@ -46,7 +47,8 @@ public class Kahns_Algo_TopologicalSort_BFS {
     }
 	
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		String str = "";
+		System.out.println(str.isEmpty());
 
 	}
 
