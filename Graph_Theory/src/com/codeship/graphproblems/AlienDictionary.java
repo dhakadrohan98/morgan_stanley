@@ -45,26 +45,30 @@ public class AlienDictionary {
     //K -> //no. of vertices
     public String findOrder(String[] words, int K) {
         int n = words.length;
-        //largest Word Len -> no. of  vertices    
+        //no. of  vertices -> all diff characters present in words array
         ArrayList<ArrayList<Integer>> adj = new ArrayList<>();
+        //make empty vertices(unique characters)
         for(int i = 0; i < K; i++) {
             adj.add(new ArrayList<>());
         }
         
+        // s1 = arr[i];
+        // s2 = arr[i+1];
         for(int i =0; i < n-1; i++) {
             String s1 = words[i];
             String s2 = words[i+1];
+            //take min length of two string for the comparison
             int len = Math.min(s1.length(), s2.length());
             for(int ptr = 0; ptr < len; ptr++) {
                 char ch1 = s1.charAt(ptr);
                 char ch2 = s2.charAt(ptr);
                 //if two characters are not equal lexicographically then
                 //make a directed edge between them
-                //str1 -> abcd
+                //str1 -> abcd (d->a) d should come before a
             	//str2 -> abca
                 if(ch1 != ch2) {
                     // ch1 -> ch2
-                    // pos(ch1) -> pos(ch2)
+                    // pos(ch1_numeric_val) -> pos(ch2_numeric_val)
                     adj.get(ch1 - 'a').add(ch2 - 'a');
                     break;
                 }
@@ -72,7 +76,7 @@ public class AlienDictionary {
         }
         
         List<Integer> topo = topologicalSort(adj);
-        //convert the list into string
+        //convert the topo list into string
         String ans = "";
         for(int itr: topo) {
             ans = ans + (char)(itr + 'a');
