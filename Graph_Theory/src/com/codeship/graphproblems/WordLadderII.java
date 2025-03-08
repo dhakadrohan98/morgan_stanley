@@ -2,6 +2,8 @@ package com.codeship.graphproblems;
 
 import java.util.*;
 
+//Time complexity depended on the length of no. of possible shortest sequences
+
 public class WordLadderII {
 	
 	public ArrayList<ArrayList<String>> findSequences(String startWord, String targetWord, String[] wordList) {
