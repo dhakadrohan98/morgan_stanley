@@ -3,9 +3,9 @@ package com.codeship.graphproblems;
 import java.util.*;
 
 // m -> |wordList|^2
-//n -> |each word|
+//n -> |wordListi|
 //TC: O(len) + O(m^2 * n)
-//SC: O(len)set + O(len)queue + (n*26)
+//SC: O(len)set + O(len)queue + (m*n*26)
 public class WordLadderI {
 	
 	class Pair {
