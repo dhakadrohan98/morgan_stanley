@@ -61,7 +61,8 @@ public class DijkstraAlgo_TreeSet_Implementation {
                 int edgeWeight = inner.second;
                 
                 if(currDist + edgeWeight < dist[adjNode]) {
-                    //remove dist[adjNode] from the set, it means this node is visited previously through a another path from the src node
+                    //remove dist[adjNode] from the set, it means this node is visited previously through a another path 
+                	//from the src node
                     if(dist[adjNode] != (int)1e9) {
                         set.remove(new Pair(dist[adjNode], adjNode));
                     }
