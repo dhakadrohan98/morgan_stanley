@@ -33,9 +33,9 @@ public class ShortestDistanceInBinaryMaze {
         }
         //mark curr source node with 0 distance
         dist[source[0]][source[1]] = 0;
-        q.offer(new Pair(0, source[0], soucrce[1]));
+        q.offer(new Pair(0, source[0], source[1]));
         //coordinates to travel into four direction
-        int[] dx = {-,1 0, 1, 0};
+        int[] dx = {-1, 0, 1, 0};
         int[] dy = {0, 1, 0, -1};
         //n * m
         while(!q.isEmpty()) {
@@ -45,11 +45,20 @@ public class ShortestDistanceInBinaryMaze {
             int col = pair.col;
             //4 direction
             for(int i = 0; i < 4; i++) {
-                int new_r = row + dx[i];
-                int col_r = col + dy[i];
+                int newr = row + dx[i];
+                int newc = col + dy[i];
                 
+                if(newr >= 0 && newr < n && newc >= 0 &&  newc < m 
+                && grid[newr][newc] == 1 && dis + 1 < dist[newr][newc]) {
+                    dist[newr][newc] = dis + 1;
+                    if(newr == destination[0] && newc == destination[1]) {
+                        return dis + 1;
+                    }
+                    q.offer(new Pair(1 + dis, newr, newc));
+                }
             }
         }
+        return -1;
     }
     
 	public static void main(String[] args) {
