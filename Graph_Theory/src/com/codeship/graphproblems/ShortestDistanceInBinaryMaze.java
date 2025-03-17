@@ -26,6 +26,7 @@ public class ShortestDistanceInBinaryMaze {
         int m = grid[0].length;
         //dist array of same size(n*m) of given matrix
         int[][] dist = new int[n][m];
+        //fill dist array with infinite values
         for(int i = 0; i < n; i++) {
             for(int j = 0; j < m; j++) {
                 dist[i][j] = (int)1e9;
@@ -43,11 +44,12 @@ public class ShortestDistanceInBinaryMaze {
             int dis = pair.distance;
             int row = pair.row;
             int col = pair.col;
-            //4 direction
+            //try to visit into adjacent cells (4 directions)
             for(int i = 0; i < 4; i++) {
                 int newr = row + dx[i];
                 int newc = col + dy[i];
-                
+                //move unit distance to adjacent cells(if it is 
+                //a valid move) 
                 if(newr >= 0 && newr < n && newc >= 0 &&  newc < m 
                 && grid[newr][newc] == 1 && dis + 1 < dist[newr][newc]) {
                     dist[newr][newc] = dis + 1;
@@ -61,9 +63,7 @@ public class ShortestDistanceInBinaryMaze {
         return -1;
     }
     
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+    public static void main(String[] args) {
+		
 	}
-
 }
